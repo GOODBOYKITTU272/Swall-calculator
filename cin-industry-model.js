@@ -27,7 +27,12 @@
     const byVersion = sectorMap && sectorMap[row.version];
     if (!byVersion) return null;
     const division = String(row.division || row.code || '').slice(0, 2);
-    return byVersion[row.code] || byVersion[division] || null;
+    const explicit = byVersion[row.code] || byVersion[division];
+    if (explicit) return explicit;
+    if (Array.isArray(byVersion.default_manufacturing_divisions) && byVersion.default_manufacturing_divisions.includes(division)) {
+      return { primary_sector: 'manufacturing', technology_signal: 'low' };
+    }
+    return null;
   }
 
   function normalizeCandidate(version, row, code, sectorMap) {
