@@ -1,12 +1,12 @@
 {
   "meta": {
-    "nic_version": "NIC-2004",
+    "nic_version": "NIC-1998",
     "level": "5-digit subclass",
-    "source_catalog_url": "https://microdata.gov.in/NADA/index.php/catalog/124/variable/V207",
-    "authority_reference_url": "https://mospi.gov.in/sites/default/files/main_menu/national_industrial_classification/nic_2004_struc_detail.pdf",
-    "source_authority": "Ministry of Statistics and Programme Implementation / National Sample Survey Office, Government of India",
-    "expected_official_subclasses": 1191,
-    "generated_at": "2026-09-16T19:08:12.686Z"
+    "authority_catalog_url": "https://www.mospi.gov.in/sites/default/files/main_menu/national_industrial_classification/nic98_7may08.pdf",
+    "downloaded_from": "https://www.mospi.gov.in/sites/default/files/main_menu/national_industrial_classification/nic98_7may08.pdf",
+    "source_authority": "Ministry of Statistics and Programme Implementation, Government of India",
+    "expected_official_subclasses": 1021,
+    "generated_at": "2026-09-16T19:08:08.460Z"
   },
   "rows": [
     {
@@ -59,15 +59,8 @@
       "class": "0111"
     },
     {
-      "code": "01118",
-      "description": "Growing of Hina leaves [Mehandi]",
-      "division": "01",
-      "group": "011",
-      "class": "0111"
-    },
-    {
       "code": "01119",
-      "description": "Growing of other crops, n.e.c. (Includes growing of potatoes, yams, sweet",
+      "description": "Growing of other crops, n.e.c. (Includes growing of potatoes, jams, sweet",
       "division": "01",
       "group": "011",
       "class": "0111"
@@ -117,20 +110,6 @@
     {
       "code": "01135",
       "description": "Growing of spice crops including: spice leaves (e.g. bay, thyme, basil); spice",
-      "division": "01",
-      "group": "011",
-      "class": "0113"
-    },
-    {
-      "code": "01136",
-      "description": "Gathering of berries or nuts etc.",
-      "division": "01",
-      "group": "011",
-      "class": "0113"
-    },
-    {
-      "code": "01139",
-      "description": "Growing of fruit, nuts, beverage and spice crops, n.e.c.",
       "division": "01",
       "group": "011",
       "class": "0113"
@@ -249,7 +228,7 @@
     },
     {
       "code": "01406",
-      "description": "Renting of agricultura l machinery with operators",
+      "description": "Renting of agricultural machinery with operators",
       "division": "01",
       "group": "014",
       "class": "0140"
@@ -257,13 +236,6 @@
     {
       "code": "01407",
       "description": "Activities to promote propagation, growth and output of animals and to obtain",
-      "division": "01",
-      "group": "014",
-      "class": "0140"
-    },
-    {
-      "code": "01408",
-      "description": "Gardening activities",
       "division": "01",
       "group": "014",
       "class": "0140"
@@ -325,39 +297,39 @@
       "class": "0200"
     },
     {
-      "code": "05011",
+      "code": "05001",
       "description": "Fishing on commercial basis in ocean, sea and coastal areas",
       "division": "05",
       "group": "050",
-      "class": "0501"
+      "class": "0500"
     },
     {
-      "code": "05012",
+      "code": "05002",
       "description": "Fishing on commercial basis in inland waters.",
       "division": "05",
       "group": "050",
-      "class": "0501"
+      "class": "0500"
     },
     {
-      "code": "05021",
+      "code": "05003",
       "description": "Gathering of marine materials such as natural pearls, sponges, coral and algae.",
       "division": "05",
       "group": "050",
-      "class": "0502"
+      "class": "0500"
     },
     {
-      "code": "05022",
+      "code": "05004",
       "description": "Fish farming, breading and rearing including operations of hatcheries for fin and",
       "division": "05",
       "group": "050",
-      "class": "0502"
+      "class": "0500"
     },
     {
-      "code": "05023",
+      "code": "05005",
       "description": "Service activities related to marine and fresh water fisheries and to operators of",
       "division": "05",
       "group": "050",
-      "class": "0502"
+      "class": "0500"
     },
     {
       "code": "10101",
@@ -374,120 +346,43 @@
       "class": "1010"
     },
     {
-      "code": "10103",
-      "description": "Cleaning, sizing and pulverizing of coal",
-      "division": "10",
-      "group": "101",
-      "class": "1010"
-    },
-    {
-      "code": "10104",
-      "description": "Manufacture of brickade or other solid fuels containing chiefly coal",
-      "division": "10",
-      "group": "101",
-      "class": "1010"
-    },
-    {
-      "code": "10109",
-      "description": "Other activities relating to mining and agglomeration of hard coal",
-      "division": "10",
-      "group": "101",
-      "class": "1010"
-    },
-    {
-      "code": "10201",
-      "description": "Mining and agglomeration of lignite from open cut mines",
-      "division": "10",
-      "group": "102",
-      "class": "1020"
-    },
-    {
-      "code": "10202",
-      "description": "Mining and agglomeration of lignite from underground",
-      "division": "10",
-      "group": "102",
-      "class": "1020"
-    },
-    {
-      "code": "10203",
-      "description": "Cleaning, sizing and pulverizing of lignite",
-      "division": "10",
-      "group": "102",
-      "class": "1020"
-    },
-    {
-      "code": "10204",
-      "description": "Manufacture of brickade or other solid fuels containing chiefly lignite",
-      "division": "10",
-      "group": "102",
-      "class": "1020"
-    },
-    {
-      "code": "10209",
-      "description": "Other operations relating to mining and agglomeration of lignite",
+      "code": "10200",
+      "description": "Mining and agglomeration of lignite [Includes under ground or open-cut mining",
       "division": "10",
       "group": "102",
       "class": "1020"
     },
     {
       "code": "10300",
-      "description": "Extraction and agglomeration of peat [incl. digging of peat]",
+      "description": "Extraction and agglomeration of peat",
       "division": "10",
       "group": "103",
       "class": "1030"
     },
     {
       "code": "11101",
-      "description": "Off shore extraction of petroleum",
+      "description": "Off shore extraction of petroleum and natural gas",
       "division": "11",
       "group": "111",
       "class": "1110"
     },
     {
       "code": "11102",
-      "description": "On shore extraction of petroleum",
-      "division": "11",
-      "group": "111",
-      "class": "1110"
-    },
-    {
-      "code": "11103",
-      "description": "Off shore extraction of natural gas",
-      "division": "11",
-      "group": "111",
-      "class": "1110"
-    },
-    {
-      "code": "11104",
-      "description": "On shore ext raction of natural gas",
+      "description": "On shore extraction of petroleum and natural gas",
       "division": "11",
       "group": "111",
       "class": "1110"
     },
     {
       "code": "11201",
-      "description": "Services incidental to off shore oil extraction",
+      "description": "Services incidental to off shore oil and gas extraction",
       "division": "11",
       "group": "112",
       "class": "1120"
     },
     {
       "code": "11202",
-      "description": "Services incidental to on shore oil extraction",
-      "division": "11",
-      "group": "112",
-      "class": "1120"
-    },
-    {
-      "code": "11203",
-      "description": "Services incidental to off shore gas extraction",
-      "division": "11",
-      "group": "112",
-      "class": "1120"
-    },
-    {
-      "code": "11204",
-      "description": "Services incidental to on shore gas extraction",
+      "description": "Services incidental to on shore oil and gas extraction",
       "division": "11",
       "group": "112",
       "class": "1120"
@@ -661,15 +556,8 @@
       "class": "1421"
     },
     {
-      "code": "14221",
-      "description": "Salt mining, quarrying, screening etc.",
-      "division": "14",
-      "group": "142",
-      "class": "1422"
-    },
-    {
-      "code": "14222",
-      "description": "Production of Salt by evaporating of pans",
+      "code": "14220",
+      "description": "Extraction of salt. [Includes salt mining, crushing and screening and salt",
       "division": "14",
       "group": "142",
       "class": "1422"
@@ -794,13 +682,6 @@
       "class": "1511"
     },
     {
-      "code": "15119",
-      "description": "Production, processing and preserving of other meat, meat products, n.e.c.",
-      "division": "15",
-      "group": "151",
-      "class": "1511"
-    },
-    {
       "code": "15121",
       "description": "Sun-drying of fish",
       "division": "15",
@@ -837,7 +718,7 @@
     },
     {
       "code": "15126",
-      "description": "Processing and canning of frog legs",
+      "description": "Processing and canning of froglegs",
       "division": "15",
       "group": "151",
       "class": "1512"
@@ -845,13 +726,6 @@
     {
       "code": "15127",
       "description": "Processing and preserving of fish crustacean and similar foods",
-      "division": "15",
-      "group": "151",
-      "class": "1512"
-    },
-    {
-      "code": "15129",
-      "description": "Processing & preserving of other fish and fish products, n.e.c.",
       "division": "15",
       "group": "151",
       "class": "1512"
@@ -914,7 +788,7 @@
     },
     {
       "code": "15139",
-      "description": "Fruit and vegetables preservation n.e.c. (including preservation by freezing and",
+      "description": "Fruit and vegetables preservation n.e.c. (including preservation by freezing)",
       "division": "15",
       "group": "151",
       "class": "1513"
@@ -969,13 +843,6 @@
       "class": "1514"
     },
     {
-      "code": "15149",
-      "description": "Manufacture of other vegetables and animal oil & fats, n.e.c.",
-      "division": "15",
-      "group": "151",
-      "class": "1514"
-    },
-    {
       "code": "15201",
       "description": "Manufacture of milk powder, ice-cream powder and condensed milk except baby",
       "division": "15",
@@ -1012,7 +879,7 @@
     },
     {
       "code": "15209",
-      "description": "Manufacture of other dairy products, n.e.c.",
+      "description": "Manufacture of other dairy products",
       "division": "15",
       "group": "152",
       "class": "1520"
@@ -1040,7 +907,7 @@
     },
     {
       "code": "15314",
-      "description": "Processing and grinding of grain other than floor, rice & dal",
+      "description": "Processing and grinding of grain",
       "division": "15",
       "group": "153",
       "class": "1531"
@@ -1061,21 +928,14 @@
     },
     {
       "code": "15317",
-      "description": "Manufacture of prepared, blended flour, wet flour for food preparation and dough",
-      "division": "15",
-      "group": "153",
-      "class": "1531"
-    },
-    {
-      "code": "15318",
-      "description": "Manufacture of other readymade mixed powders like idli, gulabjamun etc.",
+      "description": "Manufacture of prepared, blended flour and dough for bread, cake, etc.",
       "division": "15",
       "group": "153",
       "class": "1531"
     },
     {
       "code": "15319",
-      "description": "Other grain milling and processing activities like manufacturing of poha/ muri etc,",
+      "description": "Other grain milling and processing activities",
       "division": "15",
       "group": "153",
       "class": "1531"
@@ -1123,13 +983,6 @@
       "class": "1532"
     },
     {
-      "code": "15329",
-      "description": "Manufacture of other starch products n.e.c.",
-      "division": "15",
-      "group": "153",
-      "class": "1532"
-    },
-    {
       "code": "15331",
       "description": "Manufacture of cattle feed",
       "division": "15",
@@ -1145,14 +998,14 @@
     },
     {
       "code": "15339",
-      "description": "Manufacture of other animal and bird feed n.e.c.",
+      "description": "Manufacture of other animal and bird feed",
       "division": "15",
       "group": "153",
       "class": "1533"
     },
     {
       "code": "15411",
-      "description": "Bread ma king",
+      "description": "Bread making",
       "division": "15",
       "group": "154",
       "class": "1541"
@@ -1166,7 +1019,7 @@
     },
     {
       "code": "15419",
-      "description": "Manufacture of other bakery products n.e.c.",
+      "description": "Manufacture of other bakery products",
       "division": "15",
       "group": "154",
       "class": "1541"
@@ -1229,7 +1082,7 @@
     },
     {
       "code": "15429",
-      "description": "Manufacture of other indigenous sugar cane/sugar beet/palm juice products n.e.c.",
+      "description": "Manufacture of other indigenous sugar cane/sugar beet/palm juice products",
       "division": "15",
       "group": "154",
       "class": "1542"
@@ -1270,11 +1123,11 @@
       "class": "1543"
     },
     {
-      "code": "15439",
-      "description": "Other activities relating to manufacture of cocoa, chocolate and sugar",
+      "code": "15440",
+      "description": "Manufacture of macaroni, noodles, conscious and similar farinaceous products",
       "division": "15",
       "group": "154",
-      "class": "1543"
+      "class": "1544"
     },
     {
       "code": "15491",
@@ -1320,31 +1173,38 @@
     },
     {
       "code": "15497",
-      "description": "Manufacture of vitaminised high protein flour, frying of dals & other cereals",
+      "description": "Manufacture of vitaminised high protein flour, frying of dals & other cereals incl.",
       "division": "15",
       "group": "154",
       "class": "1549"
     },
     {
       "code": "15499",
-      "description": "Other semi-processed, processed or instant foods n.e.c. except farinaceous",
+      "description": "Other semi-processed, processed or instant foods except farinaceous products and",
       "division": "15",
       "group": "154",
       "class": "1549"
     },
     {
       "code": "15511",
+      "description": "Distilling, rectifying and blending of spirits; ethyl alcohol production from",
+      "division": "15",
+      "group": "155",
+      "class": "1551"
+    },
+    {
+      "code": "15512",
       "description": "Manufacture of country liquor",
       "division": "15",
       "group": "155",
       "class": "1551"
     },
     {
-      "code": "15519",
-      "description": "Distilling, rectifying and blending of spirits; ethyl alcohol production from",
+      "code": "15520",
+      "description": "Manufacture of wines",
       "division": "15",
       "group": "155",
-      "class": "1551"
+      "class": "1552"
     },
     {
       "code": "15531",
@@ -1363,13 +1223,6 @@
     {
       "code": "15533",
       "description": "Manufacture of malt",
-      "division": "15",
-      "group": "155",
-      "class": "1553"
-    },
-    {
-      "code": "15539",
-      "description": "Manufacture of malt liquors and malt n.e.c.",
       "division": "15",
       "group": "155",
       "class": "1553"
@@ -1403,15 +1256,8 @@
       "class": "1554"
     },
     {
-      "code": "15545",
-      "description": "Manufacture of soft drinks",
-      "division": "15",
-      "group": "155",
-      "class": "1554"
-    },
-    {
       "code": "15549",
-      "description": "Manufacture of other non-alcoholic beverages n.e.c.",
+      "description": "Manufacture of beverages n.e.c.",
       "division": "15",
       "group": "155",
       "class": "1554"
@@ -1474,7 +1320,7 @@
     },
     {
       "code": "16009",
-      "description": "Manufacture of other tobacco products including chewing tobacco n.e.c.",
+      "description": "Manufacture of other tobacco products including chewing tobacco.",
       "division": "16",
       "group": "160",
       "class": "1600"
@@ -1578,118 +1424,6 @@
       "class": "1712"
     },
     {
-      "code": "17126",
-      "description": "Activity related to screen printing",
-      "division": "17",
-      "group": "171",
-      "class": "1712"
-    },
-    {
-      "code": "17129",
-      "description": "Other activities relating to finishing of textile n.e.c.",
-      "division": "17",
-      "group": "171",
-      "class": "1712"
-    },
-    {
-      "code": "17131",
-      "description": "Cotton spinning through charkha",
-      "division": "17",
-      "group": "171",
-      "class": "1713"
-    },
-    {
-      "code": "17132",
-      "description": "Weaving of cotton khadi",
-      "division": "17",
-      "group": "171",
-      "class": "1713"
-    },
-    {
-      "code": "17133",
-      "description": "Weaving of cotton textiles on handlooms",
-      "division": "17",
-      "group": "171",
-      "class": "1713"
-    },
-    {
-      "code": "17134",
-      "description": "Spinning of wool and silk through charkha",
-      "division": "17",
-      "group": "171",
-      "class": "1713"
-    },
-    {
-      "code": "17135",
-      "description": "Weaving of woollen and silk khadi",
-      "division": "17",
-      "group": "171",
-      "class": "1713"
-    },
-    {
-      "code": "17136",
-      "description": "Weaving of wool and silk on handlooms",
-      "division": "17",
-      "group": "171",
-      "class": "1713"
-    },
-    {
-      "code": "17137",
-      "description": "Weaving of artificial/synthetic textile fabrics on handlooms",
-      "division": "17",
-      "group": "171",
-      "class": "1713"
-    },
-    {
-      "code": "17139",
-      "description": "Preparation and spinning of textile fibre including weaving of textiles",
-      "division": "17",
-      "group": "171",
-      "class": "1713"
-    },
-    {
-      "code": "17141",
-      "description": "Bleaching, dyeing and finishing of cotton cloth and yarn by hand",
-      "division": "17",
-      "group": "171",
-      "class": "1714"
-    },
-    {
-      "code": "17142",
-      "description": "Printing of cloth by hand",
-      "division": "17",
-      "group": "171",
-      "class": "1714"
-    },
-    {
-      "code": "17143",
-      "description": "Bleaching, dyeing and finishing of woollen textiles by hand",
-      "division": "17",
-      "group": "171",
-      "class": "1714"
-    },
-    {
-      "code": "17144",
-      "description": "Bleaching, dyeing, printing and finishing of silk textiles by hand",
-      "division": "17",
-      "group": "171",
-      "class": "1714"
-    },
-    {
-      "code": "17145",
-      "description": "Bleaching, dyeing, printing and finishing of artificial/synthetic textile fabrics by",
-      "division": "17",
-      "group": "171",
-      "class": "1714"
-    },
-    {
-      "code": "17149",
-      "description": "Finishing of textiles (khadi/handloom), n.e.c.",
-      "division": "17",
-      "group": "171",
-      "class": "1714"
-    },
-    {
       "code": "17211",
       "description": "Manufacture of curtains, bed-covers and furnishings.",
       "division": "17",
@@ -1726,7 +1460,7 @@
     },
     {
       "code": "17219",
-      "description": "Manufacture of other made up textile goods except apparel n.e.c.",
+      "description": "Manufacture of other made up textile goods except apparel",
       "division": "17",
       "group": "172",
       "class": "1721"
@@ -1824,91 +1558,21 @@
     },
     {
       "code": "17239",
-      "description": "Manufacture of other cordage, rope nets etc n.e.c.",
+      "description": "Manufacture of other cordage, rope nets etc.",
       "division": "17",
       "group": "172",
       "class": "1723"
     },
     {
-      "code": "17241",
-      "description": "Embroidery work by hand",
-      "division": "17",
-      "group": "172",
-      "class": "1724"
-    },
-    {
-      "code": "17242",
-      "description": "Zari work by hand",
-      "division": "17",
-      "group": "172",
-      "class": "1724"
-    },
-    {
-      "code": "17243",
-      "description": "Making of laces and fringes by hand",
-      "division": "17",
-      "group": "172",
-      "class": "1724"
-    },
-    {
-      "code": "17249",
-      "description": "Making of other ornamental trimmings by hand, n.e.c.",
-      "division": "17",
-      "group": "172",
-      "class": "1724"
-    },
-    {
-      "code": "17251",
-      "description": "Manufacture of blankets and shawls by hand",
-      "division": "17",
-      "group": "172",
-      "class": "1725"
-    },
-    {
-      "code": "17252",
-      "description": "Manufacture of cotton carpets by hand",
-      "division": "17",
-      "group": "172",
-      "class": "1725"
-    },
-    {
-      "code": "17253",
-      "description": "Manufacture of woollen carpets by hand",
-      "division": "17",
-      "group": "172",
-      "class": "1725"
-    },
-    {
-      "code": "17254",
-      "description": "Manufacture of silk carpets by hand",
-      "division": "17",
-      "group": "172",
-      "class": "1725"
-    },
-    {
-      "code": "17255",
-      "description": "Manufacture of durries, druggets and rugs by hand",
-      "division": "17",
-      "group": "172",
-      "class": "1725"
-    },
-    {
-      "code": "17259",
-      "description": "Manufacture of blankets, shawls, carpets, rugs and other similar textile products",
-      "division": "17",
-      "group": "172",
-      "class": "1725"
-    },
-    {
       "code": "17291",
-      "description": "Embroidery work and making of laces and fringes other than by hand",
+      "description": "Embroidery work and making of laces and fringes",
       "division": "17",
       "group": "172",
       "class": "1729"
     },
     {
       "code": "17292",
-      "description": "Zari work and making of other ornamental trimmings other than by hand",
+      "description": "Zari work and making of other ornamental trimmings",
       "division": "17",
       "group": "172",
       "class": "1729"
@@ -1957,7 +1621,7 @@
     },
     {
       "code": "17299",
-      "description": "Manufacture of other textiles/textile products n.e.c.",
+      "description": "Manufacture of other textiles/textile products",
       "division": "17",
       "group": "172",
       "class": "1729"
@@ -2014,13 +1678,6 @@
     {
       "code": "18104",
       "description": "Manufacture of wearing apparel of leather and substitutes of leather",
-      "division": "18",
-      "group": "181",
-      "class": "1810"
-    },
-    {
-      "code": "18105",
-      "description": "Custom Tailoring",
       "division": "18",
       "group": "181",
       "class": "1810"
@@ -2118,7 +1775,7 @@
     },
     {
       "code": "19119",
-      "description": "Other tanning, curing, finishing, embossing and japanning of leather n.e.c.",
+      "description": "Other tanning, curing, finishing, embossing and japanning of leather",
       "division": "19",
       "group": "191",
       "class": "1911"
@@ -2166,13 +1823,6 @@
       "class": "1920"
     },
     {
-      "code": "19209",
-      "description": "Manufacture of other footwear n.e.c.",
-      "division": "19",
-      "group": "192",
-      "class": "1920"
-    },
-    {
       "code": "20101",
       "description": "Sawing and planing of wood (other than plywood)",
       "division": "20",
@@ -2189,13 +1839,6 @@
     {
       "code": "20103",
       "description": "Manufacture of railway sleepers",
-      "division": "20",
-      "group": "201",
-      "class": "2010"
-    },
-    {
-      "code": "20109",
-      "description": "Activities relating to saw milling and planning of wood n.e.c.",
       "division": "20",
       "group": "201",
       "class": "2010"
@@ -2223,7 +1866,7 @@
     },
     {
       "code": "20219",
-      "description": "Manufacture of other plywood products n.e.c.",
+      "description": "Manufacture of other plywood products",
       "division": "20",
       "group": "202",
       "class": "2021"
@@ -2238,13 +1881,6 @@
     {
       "code": "20222",
       "description": "Manufacture of prefabricated buildings predominantly of wood.",
-      "division": "20",
-      "group": "202",
-      "class": "2022"
-    },
-    {
-      "code": "20229",
-      "description": "Manufacture of builder’s carpentary and joinery n.e.c.",
       "division": "20",
       "group": "202",
       "class": "2022"
@@ -2265,7 +1901,7 @@
     },
     {
       "code": "20233",
-      "description": "Manufacture of market basketry, grain storage bins, ration baskets including",
+      "description": "Manufacture of market basketry, grain storage bins, ration baskets and similar",
       "division": "20",
       "group": "202",
       "class": "2023"
@@ -2321,7 +1957,7 @@
     },
     {
       "code": "20297",
-      "description": "Manufacture of articles made of palm leaf, dhak leaf, screw-pine leaf and khajoor",
+      "description": "Manufacture of articles made of palm leaf, screw-pine leaf and khajoor leaf;",
       "division": "20",
       "group": "202",
       "class": "2029"
@@ -2335,7 +1971,7 @@
     },
     {
       "code": "20299",
-      "description": "Manufacture of other wood products n.e.c. (including wooden tools, handles, etc.",
+      "description": "Manufacture of other wood products (including wooden tools, handles, etc.",
       "division": "20",
       "group": "202",
       "class": "2029"
@@ -2418,15 +2054,8 @@
       "class": "2102"
     },
     {
-      "code": "21024",
-      "description": "Manufacture of corrugated paper board",
-      "division": "21",
-      "group": "210",
-      "class": "2102"
-    },
-    {
       "code": "21029",
-      "description": "Manufacture of other containers and boxes of paper or paper board n.e.c.",
+      "description": "Manufacture of other containers and boxes of paper or paper board",
       "division": "21",
       "group": "210",
       "class": "2102"
@@ -2489,10 +2118,17 @@
     },
     {
       "code": "21099",
-      "description": "Manufacture of other pulp products/special purpose paper n.e.c.",
+      "description": "Manufacture of other pulp products/special purpose paper",
       "division": "21",
       "group": "210",
       "class": "2109"
+    },
+    {
+      "code": "22110",
+      "description": "Publishing of books, brochures, musical books and other publications.",
+      "division": "22",
+      "group": "221",
+      "class": "2211"
     },
     {
       "code": "22121",
@@ -2507,6 +2143,20 @@
       "division": "22",
       "group": "221",
       "class": "2212"
+    },
+    {
+      "code": "22130",
+      "description": "Publishing of recorded media [includes publishing of records and other recorded",
+      "division": "22",
+      "group": "221",
+      "class": "2213"
+    },
+    {
+      "code": "22190",
+      "description": "Other publishing [includes publishing of photos and postcards, time-tables, forms,",
+      "division": "22",
+      "group": "221",
+      "class": "2219"
     },
     {
       "code": "22211",
@@ -2531,7 +2181,7 @@
     },
     {
       "code": "22219",
-      "description": "Printing and allied activities like screen printing other then textile, n.e.c.",
+      "description": "Printing and allied activities, n.e.c.",
       "division": "22",
       "group": "222",
       "class": "2221"
@@ -2546,13 +2196,6 @@
     {
       "code": "22222",
       "description": "Book binding on account of others",
-      "division": "22",
-      "group": "222",
-      "class": "2222"
-    },
-    {
-      "code": "22229",
-      "description": "Other service activities relating to printing n.e.c",
       "division": "22",
       "group": "222",
       "class": "2222"
@@ -2601,7 +2244,7 @@
     },
     {
       "code": "23209",
-      "description": "Manufacture of other petroleum products n.e.c. (includes manufacture of",
+      "description": "Manufacture of other petroleum products (includes manufacture of petroleum",
       "division": "23",
       "group": "232",
       "class": "2320"
@@ -2741,7 +2384,7 @@
     },
     {
       "code": "24139",
-      "description": "Manufacture of other plastics in primary forms n.e.c. (including mixtures of",
+      "description": "Manufacture of other plastics in primary forms (including mixtures of synthetic",
       "division": "24",
       "group": "241",
       "class": "2413"
@@ -2755,7 +2398,7 @@
     },
     {
       "code": "24219",
-      "description": "Manufacture of other pesticides and agro chemical products n.e.c.",
+      "description": "Manufacture of other pesticides and agro chemical products",
       "division": "24",
       "group": "242",
       "class": "2421"
@@ -2839,7 +2482,7 @@
     },
     {
       "code": "24239",
-      "description": "Manufacture of other pharmaceutical and botanical products like hina powder etc.,",
+      "description": "Manufacture of other pharmaceutical and botanical products n.e.c.",
       "division": "24",
       "group": "242",
       "class": "2423"
@@ -3013,13 +2656,6 @@
       "class": "2430"
     },
     {
-      "code": "24309",
-      "description": "Manufacture of other man made fibre n.e.c.",
-      "division": "24",
-      "group": "243",
-      "class": "2430"
-    },
-    {
       "code": "25111",
       "description": "Manufacture of tyres and tubes for motor vehicle, tractors and aircrafts",
       "division": "25",
@@ -3049,14 +2685,14 @@
     },
     {
       "code": "25119",
-      "description": "Manufacture of pneumatic tyres and soild or cushion tyres, tyres for animal driven",
+      "description": "Manufacture of pneumatic tyres and soild or cushion tyres, tyre parts such as",
       "division": "25",
       "group": "251",
       "class": "2511"
     },
     {
       "code": "25191",
-      "description": "Manufacture of rubber plates, sheets, strips, rods, tubes, pipes, hoses and profile -",
+      "description": "Manufacture of rubber plates, sheets, strips, rods, tubes, pipes, hoses and profile-",
       "division": "25",
       "group": "251",
       "class": "2519"
@@ -3091,7 +2727,7 @@
     },
     {
       "code": "25201",
-      "description": "Manufacture of semi -finished products of plastics",
+      "description": "Manufacture of semi-finished products of plastics",
       "division": "25",
       "group": "252",
       "class": "2520"
@@ -3147,7 +2783,7 @@
     },
     {
       "code": "25209",
-      "description": "Manufacture of polymer/ synthetic / PVC water storage tanks and other plastic",
+      "description": "Manufacture of other plastic products",
       "division": "25",
       "group": "252",
       "class": "2520"
@@ -3272,13 +2908,6 @@
       "class": "2692"
     },
     {
-      "code": "26929",
-      "description": "Manufacture of other refractory ceramic products n.e.c.",
-      "division": "26",
-      "group": "269",
-      "class": "2692"
-    },
-    {
       "code": "26931",
       "description": "Manufacture of bricks",
       "division": "26",
@@ -3342,13 +2971,6 @@
       "class": "2694"
     },
     {
-      "code": "26949",
-      "description": "Manufacture of other cement, lime and plaster n.e.c.",
-      "division": "26",
-      "group": "269",
-      "class": "2694"
-    },
-    {
       "code": "26951",
       "description": "Manufacture of plaster statues",
       "division": "26",
@@ -3405,6 +3027,13 @@
       "class": "2695"
     },
     {
+      "code": "26960",
+      "description": "Cutting, shaping and finishing of stone[ includes cutting, shaping and finishing",
+      "division": "26",
+      "group": "269",
+      "class": "2696"
+    },
+    {
       "code": "26991",
       "description": "Manufacture of worked mica and mica products",
       "division": "26",
@@ -3440,130 +3069,67 @@
       "class": "2699"
     },
     {
-      "code": "27141",
-      "description": "Manufacture of semi -finished non ally steel of these shapes",
+      "code": "27101",
+      "description": "Manufacture of ferro alloys.",
       "division": "27",
       "group": "271",
-      "class": "2714"
+      "class": "2710"
     },
     {
-      "code": "27142",
-      "description": "Manufacture of semi -finished alloy steel of these shapes",
+      "code": "27102",
+      "description": "Manufacture of Direct Reduced Iron (DRI)/ Sponge Iron and other spongy ferrous",
       "division": "27",
       "group": "271",
-      "class": "2714"
+      "class": "2710"
     },
     {
-      "code": "27143",
-      "description": "Manufacture of semi -finished stainless steel of these shapes",
+      "code": "27103",
+      "description": "Manufacture of Pig Iron (hot metal).",
       "division": "27",
       "group": "271",
-      "class": "2714"
+      "class": "2710"
     },
     {
-      "code": "27151",
-      "description": "Manufacture of alloy-steel of these shapes",
+      "code": "27104",
+      "description": "Manufacture of non-alloy steel primary/semi finished/finished long products",
       "division": "27",
       "group": "271",
-      "class": "2715"
+      "class": "2710"
     },
     {
-      "code": "27152",
-      "description": "Manufacture of non-alloy steel of these shapes",
+      "code": "27105",
+      "description": "Manufacture of non alloy steel (semi finished/finished), flat products including",
       "division": "27",
       "group": "271",
-      "class": "2715"
+      "class": "2710"
     },
     {
-      "code": "27153",
-      "description": "Manufacture of stainless steel of these shapes",
+      "code": "27106",
+      "description": "Manufacture of alloy steel (primary/semi finished/finished long products",
       "division": "27",
       "group": "271",
-      "class": "2715"
+      "class": "2710"
     },
     {
-      "code": "27161",
-      "description": "Manufacture of non-alloy steel hot rolled flat products (including plates, sheets,",
+      "code": "27107",
+      "description": "Manufacture of alloy steel (semi finished/finished), flat products including slabs,",
       "division": "27",
       "group": "271",
-      "class": "2716"
+      "class": "2710"
     },
     {
-      "code": "27162",
-      "description": "Manufacture of alloy steel hot rolled flat products (including plates, sheets, strips,",
+      "code": "27108",
+      "description": "Manufacture of primary/semi finished/finished stainless steel.",
       "division": "27",
       "group": "271",
-      "class": "2716"
+      "class": "2710"
     },
     {
-      "code": "27163",
-      "description": "Manufacture of stainless steel hot rolled flat products (including plated sheets,",
+      "code": "27109",
+      "description": "Manufacture of other basic iron and steel items n.e.c",
       "division": "27",
       "group": "271",
-      "class": "2716"
-    },
-    {
-      "code": "27164",
-      "description": "Manufacture of non-alloy steel cold rolled flat products (including sheets, strips,",
-      "division": "27",
-      "group": "271",
-      "class": "2716"
-    },
-    {
-      "code": "27165",
-      "description": "Manufacture of alloy steel cold rolled flat products",
-      "division": "27",
-      "group": "271",
-      "class": "2716"
-    },
-    {
-      "code": "27171",
-      "description": "Manufacture of GP/GC/Zn-Al. coated sheets/ Colour coated",
-      "division": "27",
-      "group": "271",
-      "class": "2717"
-    },
-    {
-      "code": "27172",
-      "description": "Manufacture of Tinplate",
-      "division": "27",
-      "group": "271",
-      "class": "2717"
-    },
-    {
-      "code": "27173",
-      "description": "Manufacture of Tin Free Steel",
-      "division": "27",
-      "group": "271",
-      "class": "2717"
-    },
-    {
-      "code": "27181",
-      "description": "Manufacture of non-alloy steel wires",
-      "division": "27",
-      "group": "271",
-      "class": "2718"
-    },
-    {
-      "code": "27182",
-      "description": "Manufacture of alloy steel wires",
-      "division": "27",
-      "group": "271",
-      "class": "2718"
-    },
-    {
-      "code": "27183",
-      "description": "Manufacture of stainless steel wires",
-      "division": "27",
-      "group": "271",
-      "class": "2718"
-    },
-    {
-      "code": "27184",
-      "description": "Manufacture of wires coated with zinc or other materials",
-      "division": "27",
-      "group": "271",
-      "class": "2718"
+      "class": "2710"
     },
     {
       "code": "27201",
@@ -3595,7 +3161,7 @@
     },
     {
       "code": "27205",
-      "description": "Manufacture of basic precious metals and by products (gold, silver & metals of",
+      "description": "Manufacture of basic precious metals (gold, silver & metals of platinum group)",
       "division": "27",
       "group": "272",
       "class": "2720"
@@ -3606,6 +3172,20 @@
       "division": "27",
       "group": "272",
       "class": "2720"
+    },
+    {
+      "code": "27310",
+      "description": "Casting of iron and steel",
+      "division": "27",
+      "group": "273",
+      "class": "2731"
+    },
+    {
+      "code": "27320",
+      "description": "Casting of non-ferrous metals",
+      "division": "27",
+      "group": "273",
+      "class": "2732"
     },
     {
       "code": "28111",
@@ -3629,20 +3209,6 @@
       "class": "2811"
     },
     {
-      "code": "28118",
-      "description": "Repair and maintenance of structural products",
-      "division": "28",
-      "group": "281",
-      "class": "2811"
-    },
-    {
-      "code": "28119",
-      "description": "Manufacture of other structural metal products n.e.c.",
-      "division": "28",
-      "group": "281",
-      "class": "2811"
-    },
-    {
       "code": "28121",
       "description": "Manufacture of containers of metal for compressed or liquified gas such as gas",
       "division": "28",
@@ -3659,13 +3225,6 @@
     {
       "code": "28123",
       "description": "Manufacture of central heating boilers, radiators and its parts and accessories",
-      "division": "28",
-      "group": "281",
-      "class": "2812"
-    },
-    {
-      "code": "28128",
-      "description": "Repair and maintenance of tanks, reservoirs and containers of metal",
       "division": "28",
       "group": "281",
       "class": "2812"
@@ -3699,18 +3258,18 @@
       "class": "2813"
     },
     {
-      "code": "28138",
-      "description": "Repair and maintenance of steam generators, except central heating hot water",
+      "code": "28910",
+      "description": "Forging, pressing , stamping and roll-forming of metal; powder metallurgy",
       "division": "28",
-      "group": "281",
-      "class": "2813"
+      "group": "289",
+      "class": "2891"
     },
     {
-      "code": "28139",
-      "description": "Manufacture of other steam generators (except central eating hot water boilers)",
+      "code": "28920",
+      "description": "Treatment and coating of metals; general mechanical engineering on a fee or",
       "division": "28",
-      "group": "281",
-      "class": "2813"
+      "group": "289",
+      "class": "2892"
     },
     {
       "code": "28931",
@@ -3735,7 +3294,7 @@
     },
     {
       "code": "28939",
-      "description": "Manufacture of general hardware n.e.c. [ saws and saw blades, including circular",
+      "description": "Manufacture of general hardware n.e.c. : saws and saw blades, including circular",
       "division": "28",
       "group": "289",
       "class": "2893"
@@ -3825,13 +3384,6 @@
       "class": "2911"
     },
     {
-      "code": "29118",
-      "description": "Repair and maintenance of engines and turbines, except aircraft, vehicle and cycle",
-      "division": "29",
-      "group": "291",
-      "class": "2911"
-    },
-    {
       "code": "29119",
       "description": "Manufacture of other movers n.e.c. hydraulic turbines, water wheels and their",
       "division": "29",
@@ -3839,29 +3391,15 @@
       "class": "2911"
     },
     {
-      "code": "29121",
-      "description": "Manufacture of pumps, compressors, taps and valves",
+      "code": "29120",
+      "description": "Manufacture of pumps, compressors, taps and valves [hydraulic power engines",
       "division": "29",
       "group": "291",
       "class": "2912"
     },
     {
-      "code": "29128",
-      "description": "Repair and maintenance of pumps, compressors, taps and valves",
-      "division": "29",
-      "group": "291",
-      "class": "2912"
-    },
-    {
-      "code": "29131",
-      "description": "Manufacture of bearings, gears, gearing and driving elements",
-      "division": "29",
-      "group": "291",
-      "class": "2913"
-    },
-    {
-      "code": "29138",
-      "description": "Repair and maintenance of bearings, gears, gearing and driving elements",
+      "code": "29130",
+      "description": "Manufacture of bearings, gears, gearing and driving elements [ball and roller",
       "division": "29",
       "group": "291",
       "class": "2913"
@@ -3881,29 +3419,8 @@
       "class": "2914"
     },
     {
-      "code": "29148",
-      "description": "Repair and maintenance of ovens, furnaces and furnace burners",
-      "division": "29",
-      "group": "291",
-      "class": "2914"
-    },
-    {
-      "code": "29149",
-      "description": "Manufacture of other ovens, furnaces and furnace burners n.e.c.",
-      "division": "29",
-      "group": "291",
-      "class": "2914"
-    },
-    {
-      "code": "29151",
-      "description": "Manufacture of lifting and handling equipment",
-      "division": "29",
-      "group": "291",
-      "class": "2915"
-    },
-    {
-      "code": "29158",
-      "description": "Repair and maintenance of lifting and handling equipment",
+      "code": "29150",
+      "description": "Manufacture of lifting and handling equipment [machines for mechanical",
       "division": "29",
       "group": "291",
       "class": "2915"
@@ -4000,13 +3517,6 @@
       "class": "2921"
     },
     {
-      "code": "29218",
-      "description": "Repair and maintenance of agricultural and forestry machinery",
-      "division": "29",
-      "group": "292",
-      "class": "2921"
-    },
-    {
       "code": "29219",
       "description": "Manufacture of other machinery and equipment for use in agriculture, horticulture",
       "division": "29",
@@ -4049,29 +3559,8 @@
       "class": "2922"
     },
     {
-      "code": "29228",
-      "description": "Repair and maintenance of machine-tools",
-      "division": "29",
-      "group": "292",
-      "class": "2922"
-    },
-    {
-      "code": "29229",
-      "description": "Manufacture of other machine tools n.e.c.",
-      "division": "29",
-      "group": "292",
-      "class": "2922"
-    },
-    {
-      "code": "29231",
+      "code": "29230",
       "description": "Manufacture of machinery for metallurgy: converters, ingot moulds, ladles and",
-      "division": "29",
-      "group": "292",
-      "class": "2923"
-    },
-    {
-      "code": "29238",
-      "description": "Repair and maintenance of machinery for metallurgy: converters, ingot moulds,",
       "division": "29",
       "group": "292",
       "class": "2923"
@@ -4175,13 +3664,6 @@
       "class": "2925"
     },
     {
-      "code": "29258",
-      "description": "Repair and maintenance of machinery for food, beverage and tobacco processing",
-      "division": "29",
-      "group": "292",
-      "class": "2925"
-    },
-    {
       "code": "29259",
       "description": "Manufacture of other machinery for beverage and tobacco processing,",
       "division": "29",
@@ -4252,22 +3734,15 @@
       "class": "2926"
     },
     {
-      "code": "29271",
-      "description": "Manufacture of weapons and ammunition",
-      "division": "29",
-      "group": "292",
-      "class": "2927"
-    },
-    {
-      "code": "29278",
-      "description": "Repair and maintenance of weapons and ammunition",
+      "code": "29270",
+      "description": "Manufacture of weapons and ammunition [includes tanks and other fighting",
       "division": "29",
       "group": "292",
       "class": "2927"
     },
     {
       "code": "29291",
-      "description": "Manufacturing of machinery for working rubber or plastics or for the manufacture",
+      "description": "Manufacture of machines for extruding, drawing, texturing, manufacturing or",
       "division": "29",
       "group": "292",
       "class": "2929"
@@ -4463,7 +3938,7 @@
     },
     {
       "code": "31102",
-      "description": "Manufacture of transformers of all sizes and types & rewinding of electric motors",
+      "description": "Manufacture of transformers of all sizes and types",
       "division": "31",
       "group": "311",
       "class": "3110"
@@ -4478,13 +3953,6 @@
     {
       "code": "31104",
       "description": "Manufacture of converters all types (including inverters)",
-      "division": "31",
-      "group": "311",
-      "class": "3110"
-    },
-    {
-      "code": "31108",
-      "description": "Repair and maintenance of electric motors, generators and transformers",
       "division": "31",
       "group": "311",
       "class": "3110"
@@ -4539,13 +4007,6 @@
       "class": "3140"
     },
     {
-      "code": "31409",
-      "description": "Manufacture of other accumulators, primary cells and primary batteries, n.e.c.",
-      "division": "31",
-      "group": "314",
-      "class": "3140"
-    },
-    {
       "code": "31501",
       "description": "Manufacture of electric filament lamps including manufacture of sealed beam",
       "division": "31",
@@ -4554,7 +4015,7 @@
     },
     {
       "code": "31502",
-      "description": "Manufacture of ultra-violet or infra -red lamps",
+      "description": "Manufacture of ultra-violet or infra-red lamps",
       "division": "31",
       "group": "315",
       "class": "3150"
@@ -4582,14 +4043,7 @@
     },
     {
       "code": "31506",
-      "description": "Manufacture of lighting equipment, illuminated signs, illuminated name -plates",
-      "division": "31",
-      "group": "315",
-      "class": "3150"
-    },
-    {
-      "code": "31509",
-      "description": "Manufacture of other electric lamps and lightening equipment n.e.c.",
+      "description": "Manufacture of lighting equipment, illuminated signs, illuminated name-plates",
       "division": "31",
       "group": "315",
       "class": "3150"
@@ -4707,13 +4161,6 @@
       "class": "3210"
     },
     {
-      "code": "32108",
-      "description": "Repair and maintenance of electronic valves and tubes and other electronic",
-      "division": "32",
-      "group": "321",
-      "class": "3210"
-    },
-    {
       "code": "32109",
       "description": "Manufacture of other electronic components n.e.c",
       "division": "32",
@@ -4756,13 +4203,6 @@
       "class": "3220"
     },
     {
-      "code": "32208",
-      "description": "Repair and maintenance of television and radio transmitters and apparatus for line",
-      "division": "32",
-      "group": "322",
-      "class": "3220"
-    },
-    {
       "code": "32209",
       "description": "Manufacture of specialized part and accessories for television and radio",
       "division": "32",
@@ -4799,7 +4239,7 @@
     },
     {
       "code": "32305",
-      "description": "Manufacture of turn-table (record decks) record/record players, pre-recorded",
+      "description": "Manufacture of turn-table (record decks) record/record players, cassette players",
       "division": "32",
       "group": "323",
       "class": "3230"
@@ -4924,6 +4364,13 @@
       "class": "3312"
     },
     {
+      "code": "33130",
+      "description": "Manufacture of industrial process control equipment [apparatus used for",
+      "division": "33",
+      "group": "331",
+      "class": "3313"
+    },
+    {
       "code": "33201",
       "description": "Manufacture of optical elements of glass or of any material; prisms and lenses,",
       "division": "33",
@@ -5043,13 +4490,6 @@
       "class": "3410"
     },
     {
-      "code": "34109",
-      "description": "Manufacture of other motor vehicles (excluding motorcycle) and related",
-      "division": "34",
-      "group": "341",
-      "class": "3410"
-    },
-    {
       "code": "34201",
       "description": "Manufacture of bodies (including cabs) designed to be mounted on motor vehicle",
       "division": "34",
@@ -5058,7 +4498,7 @@
     },
     {
       "code": "34202",
-      "description": "Manufacture of trailers and semi-trailers designed to be drawn by mo tor vehicles,",
+      "description": "Manufacture of trailers and semi-trailers designed to be drawn by motor vehicles,",
       "division": "34",
       "group": "342",
       "class": "3420"
@@ -5066,13 +4506,6 @@
     {
       "code": "34203",
       "description": "Manufacture of containers (including the containers for the transport of fluids)",
-      "division": "34",
-      "group": "342",
-      "class": "3420"
-    },
-    {
-      "code": "34209",
-      "description": "Manufacture of other attachments to motor vehicles n.e.c.",
       "division": "34",
       "group": "342",
       "class": "3420"
@@ -5114,7 +4547,7 @@
     },
     {
       "code": "35115",
-      "description": "Building of vessels the main activity of which is not navigation (e.g. dredgers, floating",
+      "description": "Building of vessels the main activity of which is not navigation (e.g. dredgers, floati",
       "division": "35",
       "group": "351",
       "class": "3511"
@@ -5134,13 +4567,6 @@
       "class": "3511"
     },
     {
-      "code": "35119",
-      "description": "Other activities relating to building and repairing of ships and boats, n.e.c.",
-      "division": "35",
-      "group": "351",
-      "class": "3511"
-    },
-    {
       "code": "35121",
       "description": "Manufacture and repair of pleasure and sporting boats drawn by power",
       "division": "35",
@@ -5149,7 +4575,7 @@
     },
     {
       "code": "35122",
-      "description": "Building and repairing of non-motorised pleasure & sporting boats including",
+      "description": "Building and repairing of non-motorised pleasure & sporting boats",
       "division": "35",
       "group": "351",
       "class": "3512"
@@ -5157,13 +4583,6 @@
     {
       "code": "35123",
       "description": "Manufacture of parts and accessories for pleasure and sporting boats",
-      "division": "35",
-      "group": "351",
-      "class": "3512"
-    },
-    {
-      "code": "35129",
-      "description": "Other activities relating to building and repairing of pleasure & sporting boats and",
       "division": "35",
       "group": "351",
       "class": "3512"
@@ -5197,20 +4616,6 @@
       "class": "3520"
     },
     {
-      "code": "35208",
-      "description": "Repair and maintenance of railway and tramway locomotives and rolling stock.",
-      "division": "35",
-      "group": "352",
-      "class": "3520"
-    },
-    {
-      "code": "35209",
-      "description": "Manufacture of other railway and tramway locomotives and rolling stock and their",
-      "division": "35",
-      "group": "352",
-      "class": "3520"
-    },
-    {
       "code": "35301",
       "description": "Manufacture of aircraft, including flying balloons, gliders, hang gliders and other",
       "division": "35",
@@ -5227,20 +4632,6 @@
     {
       "code": "35303",
       "description": "Manufacture of parts and accessories for aircraft and spacecraft: aircraft launching",
-      "division": "35",
-      "group": "353",
-      "class": "3530"
-    },
-    {
-      "code": "35308",
-      "description": "Repair and maintenance of aircraft and spacecraft.",
-      "division": "35",
-      "group": "353",
-      "class": "3530"
-    },
-    {
-      "code": "35309",
-      "description": "Manufacture of other air-craft, space craft and parts n.e.c.",
       "division": "35",
       "group": "353",
       "class": "3530"
@@ -5274,13 +4665,6 @@
       "class": "3591"
     },
     {
-      "code": "35919",
-      "description": "Manufacture of other motor-cycle and parts (including accessories) n.e.c.",
-      "division": "35",
-      "group": "359",
-      "class": "3591"
-    },
-    {
       "code": "35921",
       "description": "Manufacture of bicycles and cycle rickshaws, including racing bicycles and",
       "division": "35",
@@ -5296,14 +4680,14 @@
     },
     {
       "code": "35923",
-      "description": "Manufacture of parts and accessories for bicycles, cycle -rickshaws and invalid",
+      "description": "Manufacture of parts and accessories for bicycles, cycle-rickshaws and invalid",
       "division": "35",
       "group": "359",
       "class": "3592"
     },
     {
       "code": "35929",
-      "description": "Manufacture of other cycles including tricycles",
+      "description": "Manufacture of other cycles",
       "division": "35",
       "group": "359",
       "class": "3592"
@@ -5311,13 +4695,6 @@
     {
       "code": "35991",
       "description": "Manufacture of bullock-carts, pushcarts, tongas and hand-carts etc.",
-      "division": "35",
-      "group": "359",
-      "class": "3599"
-    },
-    {
-      "code": "35998",
-      "description": "Repair and maintenance of other transport equipment.",
       "division": "35",
       "group": "359",
       "class": "3599"
@@ -5359,7 +4736,7 @@
     },
     {
       "code": "36109",
-      "description": "Manufacture of photo frame and other furniture & fixtures n.e.c.",
+      "description": "Manufacture of other furniture and fixtures n.e.c.",
       "division": "36",
       "group": "361",
       "class": "3610"
@@ -5386,11 +4763,11 @@
       "class": "3691"
     },
     {
-      "code": "36919",
-      "description": "Manufacture of other jewelry and other articles, n.e.c.",
+      "code": "36920",
+      "description": "Manufacture of musical instruments [this class includes manufacture of keyboard",
       "division": "36",
       "group": "369",
-      "class": "3691"
+      "class": "3692"
     },
     {
       "code": "36931",
@@ -5444,13 +4821,6 @@
     {
       "code": "36942",
       "description": "Manufacture of wooden toys, decoration pieces and wooden lamp stand etc.",
-      "division": "36",
-      "group": "369",
-      "class": "3694"
-    },
-    {
-      "code": "36949",
-      "description": "Manufacture of other games and toys n.e.c.",
       "division": "36",
       "group": "369",
       "class": "3694"
@@ -5520,14 +4890,14 @@
     },
     {
       "code": "37100",
-      "description": "Recycling of metal waste and scrap [from rejected aluminum, utensil, containers",
+      "description": "Recycling of metal waste and scrap",
       "division": "37",
       "group": "371",
       "class": "3710"
     },
     {
       "code": "37200",
-      "description": "Recycling of non-metal waste and scrap [from old new papers, rejected glass",
+      "description": "Recycling of non-metal waste and scrap",
       "division": "37",
       "group": "372",
       "class": "3720"
@@ -5842,7 +5212,7 @@
     },
     {
       "code": "51109",
-      "description": "Commission agents n.e.c. ( Commission agents working in emerging area like",
+      "description": "Commission agents n.e.c.",
       "division": "51",
       "group": "511",
       "class": "5110"
@@ -5856,7 +5226,7 @@
     },
     {
       "code": "51212",
-      "description": "Wholesale of un-manufactured tobacco, paan (betel leaf), opium, ganja &",
+      "description": "Wholesale of un-manufactured tobacco, pan, opium, ganja & cinchona etc.",
       "division": "51",
       "group": "512",
       "class": "5121"
@@ -5885,20 +5255,6 @@
     {
       "code": "51216",
       "description": "Wholesale of hides, skins and leather",
-      "division": "51",
-      "group": "512",
-      "class": "5121"
-    },
-    {
-      "code": "51217",
-      "description": "Wholesale of oilseed",
-      "division": "51",
-      "group": "512",
-      "class": "5121"
-    },
-    {
-      "code": "51218",
-      "description": "Wholesale of sugarcane",
       "division": "51",
       "group": "512",
       "class": "5121"
@@ -6051,6 +5407,20 @@
       "class": "5139"
     },
     {
+      "code": "51410",
+      "description": "Wholesale of solid, liquid and gaseous fuels and related products.",
+      "division": "51",
+      "group": "514",
+      "class": "5141"
+    },
+    {
+      "code": "51420",
+      "description": "Wholesale of metals and metal ores",
+      "division": "51",
+      "group": "514",
+      "class": "5142"
+    },
+    {
       "code": "51431",
       "description": "Wholesale of wood in the rough and products of primary processing of wood",
       "division": "51",
@@ -6129,140 +5499,63 @@
     },
     {
       "code": "51498",
-      "description": "Wholesale of waste and scrap & materials for re-cycling (Includes the activities",
+      "description": "Wholesale of waste and scrap & materials for re-cycling.",
       "division": "51",
       "group": "514",
       "class": "5149"
     },
     {
-      "code": "51511",
-      "description": "Wholesale of computer and computer peripheral equipment",
-      "division": "51",
-      "group": "515",
-      "class": "5151"
-    },
-    {
-      "code": "51512",
-      "description": "Wholesale of photocopy and thermocopy machine",
-      "division": "51",
-      "group": "515",
-      "class": "5151"
-    },
-    {
-      "code": "51513",
-      "description": "Wholesale of software",
-      "division": "51",
-      "group": "515",
-      "class": "5151"
-    },
-    {
-      "code": "51521",
-      "description": "Wholesale of electronic valves and tubes",
-      "division": "51",
-      "group": "515",
-      "class": "5152"
-    },
-    {
-      "code": "51522",
-      "description": "Wholesale of semi -conductor device",
-      "division": "51",
-      "group": "515",
-      "class": "5152"
-    },
-    {
-      "code": "51523",
-      "description": "Wholesale of microchips and integrated circuits",
-      "division": "51",
-      "group": "515",
-      "class": "5152"
-    },
-    {
-      "code": "51524",
-      "description": "Wholesale of printed circuits",
-      "division": "51",
-      "group": "515",
-      "class": "5152"
-    },
-    {
-      "code": "51525",
-      "description": "Wholesale of blank audio and video tapes and diskettes",
-      "division": "51",
-      "group": "515",
-      "class": "5152"
-    },
-    {
-      "code": "51526",
-      "description": "Wholesale of telephone and communications equipments",
-      "division": "51",
-      "group": "515",
-      "class": "5152"
-    },
-    {
-      "code": "51591",
+      "code": "51501",
       "description": "Wholesale of agricultural machinery and equipment",
       "division": "51",
       "group": "515",
-      "class": "5159"
+      "class": "5150"
     },
     {
-      "code": "51592",
+      "code": "51502",
       "description": "Wholesale of transport equipment except motor vehicles and motor cycles",
       "division": "51",
       "group": "515",
-      "class": "5159"
+      "class": "5150"
     },
     {
-      "code": "51593",
+      "code": "51503",
       "description": "Wholesale of construction and civil engineering machinery and equipment",
       "division": "51",
       "group": "515",
-      "class": "5159"
+      "class": "5150"
     },
     {
-      "code": "51594",
+      "code": "51504",
       "description": "Wholesale of machinery and equipment for the textile, wood and metal",
       "division": "51",
       "group": "515",
-      "class": "5159"
+      "class": "5150"
     },
     {
-      "code": "51595",
+      "code": "51505",
       "description": "Wholesale of electrical machinery, equipment and supplies, n.e.c.",
       "division": "51",
       "group": "515",
-      "class": "5159"
+      "class": "5150"
     },
     {
-      "code": "51596",
-      "description": "Wholesale of office machinery and equipment other than computers, computer",
+      "code": "51506",
+      "description": "Wholesale of office machinery and equipment",
       "division": "51",
       "group": "515",
-      "class": "5159"
+      "class": "5150"
     },
     {
-      "code": "51597",
+      "code": "51507",
       "description": "Wholesale of scientific, medical and surgical machinery and equipment",
       "division": "51",
       "group": "515",
-      "class": "5159"
-    },
-    {
-      "code": "51599",
-      "description": "Wholesale of other machinery, equipment and supplies n.e.c.",
-      "division": "51",
-      "group": "515",
-      "class": "5159"
+      "class": "5150"
     },
     {
       "code": "51901",
       "description": "Wholesale of lottery tickets",
-      "division": "51",
-      "group": "519",
-      "class": "5190"
-    },
-    {
-      "code": "51902",
-      "description": "Wholesale trade via e-commerce",
       "division": "51",
       "group": "519",
       "class": "5190"
@@ -6273,6 +5566,20 @@
       "division": "51",
       "group": "519",
       "class": "5190"
+    },
+    {
+      "code": "52110",
+      "description": "Retail sale in non-specialized stores with food, beverages or tobacco",
+      "division": "52",
+      "group": "521",
+      "class": "5211"
+    },
+    {
+      "code": "52190",
+      "description": "Other retail sale in non-specialized stores [Includes mainly the so-called",
+      "division": "52",
+      "group": "521",
+      "class": "5219"
     },
     {
       "code": "52201",
@@ -6297,7 +5604,7 @@
     },
     {
       "code": "52204",
-      "description": "Retail sale of sweetmeats & confectionery",
+      "description": "Retail sale of sweetmeats",
       "division": "52",
       "group": "522",
       "class": "5220"
@@ -6318,7 +5625,7 @@
     },
     {
       "code": "52207",
-      "description": "Retail sale of paan, bidi, cigarette, opium, ganja, cinchona etc",
+      "description": "Retail sale of paan, bidi and cigarette",
       "division": "52",
       "group": "522",
       "class": "5220"
@@ -6416,7 +5723,7 @@
     },
     {
       "code": "52339",
-      "description": "Retail sale of household appliances, articles and equipment n.e.c. [Includes retail",
+      "description": "Retail sale of household appliances, articles and equipment, n.e.c. [Includes retail",
       "division": "52",
       "group": "523",
       "class": "5233"
@@ -6451,7 +5758,7 @@
     },
     {
       "code": "52392",
-      "description": "Retail sale of computers and non-customized software (supply of specialized",
+      "description": "Retail sale of computers and non-customized software",
       "division": "52",
       "group": "523",
       "class": "5239"
@@ -6486,14 +5793,14 @@
     },
     {
       "code": "52397",
-      "description": "Retail sale of agricultural inputs (seeds, fertilisers, pesticides), machinery,",
+      "description": "Retail sale of agricultural inputs (seeds, fertilisers, pesticides) and tools",
       "division": "52",
       "group": "523",
       "class": "5239"
     },
     {
       "code": "52398",
-      "description": "Retail sale of sport goods, games and toys",
+      "description": "Retail sale of sports goods, games and toys",
       "division": "52",
       "group": "523",
       "class": "5239"
@@ -6507,24 +5814,24 @@
     },
     {
       "code": "52400",
-      "description": "Retail sale of second-hand goods in stores",
+      "description": "Retail sale of second-hand goods in stores [includes the pawn shops]",
       "division": "52",
       "group": "524",
       "class": "5240"
     },
     {
-      "code": "52511",
-      "description": "Retail sale via mail order houses",
+      "code": "52510",
+      "description": "Retail sale via mail order houses [includes the activity of retail selling through",
       "division": "52",
       "group": "525",
       "class": "5251"
     },
     {
-      "code": "52512",
-      "description": "Retail sale via e-commerce",
+      "code": "52520",
+      "description": "Retail sale via stalls and markets",
       "division": "52",
       "group": "525",
-      "class": "5251"
+      "class": "5252"
     },
     {
       "code": "52591",
@@ -6535,7 +5842,7 @@
     },
     {
       "code": "52599",
-      "description": "Other non-store retail sale n.e.c. (Includes retail sale of any kind of product in any",
+      "description": "Other non-store retail sale (Includes retail sale of any kind of product in any way",
       "division": "52",
       "group": "525",
       "class": "5259"
@@ -6570,7 +5877,7 @@
     },
     {
       "code": "52605",
-      "description": "Repair of bicycles, cycle rickshaws and other non-mechanised vehicles",
+      "description": "Repair of bicycles and cycle rickshaws",
       "division": "52",
       "group": "526",
       "class": "5260"
@@ -6605,7 +5912,7 @@
     },
     {
       "code": "55104",
-      "description": "Operation of dormitories and/or residence halls/hostels at educational institutions",
+      "description": "Operation of dormitories and/or residence halls/hostels at educational institutions.",
       "division": "55",
       "group": "551",
       "class": "5510"
@@ -6653,64 +5960,22 @@
       "class": "5520"
     },
     {
-      "code": "55206",
-      "description": "Meals on adhoc fixed site",
-      "division": "55",
-      "group": "552",
-      "class": "5520"
-    },
-    {
-      "code": "55207",
-      "description": "Meals without premises (Meals on wheels)",
-      "division": "55",
-      "group": "552",
-      "class": "5520"
-    },
-    {
-      "code": "55208",
-      "description": "Cooking services",
-      "division": "55",
-      "group": "552",
-      "class": "5520"
-    },
-    {
       "code": "55209",
-      "description": "Restaurants, bars and canteens n.e.c.",
+      "description": "Cafes, lunch counters, refreshment stands and other establishments selling food",
       "division": "55",
       "group": "552",
       "class": "5520"
     },
     {
-      "code": "60101",
-      "description": "Passenger railway transport",
+      "code": "60100",
+      "description": "Transport via railways [Includes passenger and freight transport by inter-urban",
       "division": "60",
       "group": "601",
       "class": "6010"
     },
     {
-      "code": "60102",
-      "description": "Freight railway transport",
-      "division": "60",
-      "group": "601",
-      "class": "6010"
-    },
-    {
-      "code": "60109",
-      "description": "Railway transport n.e.c.",
-      "division": "60",
-      "group": "601",
-      "class": "6010"
-    },
-    {
-      "code": "60211",
-      "description": "Land transport other than urban, sub-urban including underground and elevated",
-      "division": "60",
-      "group": "602",
-      "class": "6021"
-    },
-    {
-      "code": "60212",
-      "description": "Transport of urban sub-urban including underground and elevated railways.",
+      "code": "60210",
+      "description": "Other scheduled passenger land transport [Includes activities providing regular",
       "division": "60",
       "group": "602",
       "class": "6021"
@@ -6842,6 +6107,34 @@
       "class": "6303"
     },
     {
+      "code": "63040",
+      "description": "Activities of travel agencies and tour operators; tourist assistance activities n.e.c.",
+      "division": "63",
+      "group": "630",
+      "class": "6304"
+    },
+    {
+      "code": "63090",
+      "description": "Activities of other transport agencies [Includes forwarding of freight, organisation",
+      "division": "63",
+      "group": "630",
+      "class": "6309"
+    },
+    {
+      "code": "64110",
+      "description": "National post activities [ Postal savings activities and other financial activities",
+      "division": "64",
+      "group": "641",
+      "class": "6411"
+    },
+    {
+      "code": "64120",
+      "description": "Courier activities other than national post activities",
+      "division": "64",
+      "group": "641",
+      "class": "6412"
+    },
+    {
       "code": "64201",
       "description": "Provision of basic telecom services: telephone, telex and telegraph (includes the",
       "division": "64",
@@ -6870,6 +6163,13 @@
       "class": "6420"
     },
     {
+      "code": "65110",
+      "description": "Central banking",
+      "division": "65",
+      "group": "651",
+      "class": "6511"
+    },
+    {
       "code": "65191",
       "description": "Monetary intermediation of commercial banks, saving banks and discount houses",
       "division": "65",
@@ -6884,8 +6184,15 @@
       "class": "6519"
     },
     {
+      "code": "65910",
+      "description": "Financial leasing [Operational leasing is classified in division 71]",
+      "division": "65",
+      "group": "659",
+      "class": "6591"
+    },
+    {
       "code": "65921",
-      "description": "Activities of hire - purchase financing",
+      "description": "Activities of hire- purchase financing",
       "division": "65",
       "group": "659",
       "class": "6592"
@@ -6905,15 +6212,8 @@
       "class": "6592"
     },
     {
-      "code": "65924",
-      "description": "Activities through credit cards",
-      "division": "65",
-      "group": "659",
-      "class": "6592"
-    },
-    {
       "code": "65929",
-      "description": "Other credit activities including pawn shops n.e.c. (Un-incorporated financial",
+      "description": "Other credit activities n.e.c. (Un-incorporated financial institutions in class 6599).",
       "division": "65",
       "group": "659",
       "class": "6592"
@@ -6947,6 +6247,48 @@
       "class": "6599"
     },
     {
+      "code": "66010",
+      "description": "Life insurance [This class includes life insurance (including reinsurance) and other",
+      "division": "66",
+      "group": "660",
+      "class": "6601"
+    },
+    {
+      "code": "66020",
+      "description": "Pension funding [This class includes the provision of retirement incomes,",
+      "division": "66",
+      "group": "660",
+      "class": "6602"
+    },
+    {
+      "code": "66030",
+      "description": "Non-life insurance",
+      "division": "66",
+      "group": "660",
+      "class": "6603"
+    },
+    {
+      "code": "67110",
+      "description": "Administration of financial markets. [This class includes the operation and",
+      "division": "67",
+      "group": "671",
+      "class": "6711"
+    },
+    {
+      "code": "67120",
+      "description": "Security dealing activities. [This class includes dealing in financial market on",
+      "division": "67",
+      "group": "671",
+      "class": "6712"
+    },
+    {
+      "code": "67190",
+      "description": "Activities auxiliary to financial intermediation n.e.c. [This class includes activities",
+      "division": "67",
+      "group": "671",
+      "class": "6719"
+    },
+    {
       "code": "67200",
       "description": "Activities auxiliary to insurance and pension funding",
       "division": "67",
@@ -6955,41 +6297,20 @@
     },
     {
       "code": "70101",
-      "description": "Purchase, sale letting of leased residential buildings",
+      "description": "Purchase, sale, letting and operating of real estate – residential and non-residential",
       "division": "70",
       "group": "701",
       "class": "7010"
     },
     {
       "code": "70102",
-      "description": "Purchase, sale letting of leased non-residential buildings",
-      "division": "70",
-      "group": "701",
-      "class": "7010"
-    },
-    {
-      "code": "70103",
-      "description": "Operating of real estate of self owned residential buildings",
-      "division": "70",
-      "group": "701",
-      "class": "7010"
-    },
-    {
-      "code": "70104",
-      "description": "Operating of real estate of self owned non-residential buildings",
-      "division": "70",
-      "group": "701",
-      "class": "7010"
-    },
-    {
-      "code": "70105",
       "description": "Developing and subdividing real estate into lots",
       "division": "70",
       "group": "701",
       "class": "7010"
     },
     {
-      "code": "70106",
+      "code": "70103",
       "description": "Lessors of real property",
       "division": "70",
       "group": "701",
@@ -7010,8 +6331,57 @@
       "class": "7020"
     },
     {
+      "code": "71110",
+      "description": "Renting of land transport equipment [Renting without operator of all kinds of",
+      "division": "71",
+      "group": "711",
+      "class": "7111"
+    },
+    {
+      "code": "71120",
+      "description": "Renting of water transport equipment [Renting of water transport equipment with",
+      "division": "71",
+      "group": "711",
+      "class": "7112"
+    },
+    {
+      "code": "71130",
+      "description": "Renting of air transport equipment [Renting of air transport equipment with",
+      "division": "71",
+      "group": "711",
+      "class": "7113"
+    },
+    {
+      "code": "71210",
+      "description": "Renting of agricultural machinery and equipment [Renting of this machinery or",
+      "division": "71",
+      "group": "712",
+      "class": "7121"
+    },
+    {
+      "code": "71220",
+      "description": "Renting of construction and civil engineering machinery and equipment. [Renting",
+      "division": "71",
+      "group": "712",
+      "class": "7122"
+    },
+    {
+      "code": "71230",
+      "description": "Renting of office machinery and equipment [including computers]",
+      "division": "71",
+      "group": "712",
+      "class": "7123"
+    },
+    {
+      "code": "71290",
+      "description": "Renting of other machinery and equipment n.e.c.",
+      "division": "71",
+      "group": "712",
+      "class": "7129"
+    },
+    {
       "code": "71301",
-      "description": "Renting of tents, electrical appliances, furniture, table ware, crockery and utensils.",
+      "description": "Renting of tents, electrical appliances, furniture, tableware, crockery and utensils.",
       "division": "71",
       "group": "713",
       "class": "7130"
@@ -7025,7 +6395,7 @@
     },
     {
       "code": "71303",
-      "description": "Renting of books, journals and magazines etc. (lending of books is classified",
+      "description": "Renting of books, journals and magazines etc.",
       "division": "71",
       "group": "713",
       "class": "7130"
@@ -7045,67 +6415,11 @@
       "class": "7210"
     },
     {
-      "code": "72211",
-      "description": "Production, supply and documentation of ready-made (non-customized) software",
+      "code": "72200",
+      "description": "Software consultancy and supply .[This class includes activities in connection",
       "division": "72",
       "group": "722",
-      "class": "7221"
-    },
-    {
-      "code": "72212",
-      "description": "Production, supply and documentation of ready-made (non-customized) operating",
-      "division": "72",
-      "group": "722",
-      "class": "7221"
-    },
-    {
-      "code": "72213",
-      "description": "Production, supply and documentation of ready-made (non-customized) software",
-      "division": "72",
-      "group": "722",
-      "class": "7221"
-    },
-    {
-      "code": "72214",
-      "description": "Production, supply and documentation of ready-made (non-customized) computor",
-      "division": "72",
-      "group": "722",
-      "class": "7221"
-    },
-    {
-      "code": "72291",
-      "description": "Analysis, design and programming of custom software, ready to use, including",
-      "division": "72",
-      "group": "722",
-      "class": "7229"
-    },
-    {
-      "code": "72292",
-      "description": "Development, production, supply and documentation of made-to-order soft-ware",
-      "division": "72",
-      "group": "722",
-      "class": "7229"
-    },
-    {
-      "code": "72293",
-      "description": "Writing of programmes of any kind following directives of the users",
-      "division": "72",
-      "group": "722",
-      "class": "7229"
-    },
-    {
-      "code": "72294",
-      "description": "Web-page designing",
-      "division": "72",
-      "group": "722",
-      "class": "7229"
-    },
-    {
-      "code": "72295",
-      "description": "Software maintenance",
-      "division": "72",
-      "group": "722",
-      "class": "7229"
+      "class": "7220"
     },
     {
       "code": "72300",
@@ -7116,7 +6430,7 @@
     },
     {
       "code": "72400",
-      "description": "Database activities and distribution of electronic content [This includes data base",
+      "description": "Database activities. [This includes data base development, data storage and data",
       "division": "72",
       "group": "724",
       "class": "7240"
@@ -7130,21 +6444,14 @@
     },
     {
       "code": "72502",
-      "description": "Repair of office, computing and accounting machinery (including repair of Xerox",
+      "description": "Repair of office, computing and accounting machinery other than computers and",
       "division": "72",
       "group": "725",
       "class": "7250"
     },
     {
-      "code": "72901",
-      "description": "Activities of cyber cafe",
-      "division": "72",
-      "group": "729",
-      "class": "7290"
-    },
-    {
-      "code": "72909",
-      "description": "Other computer related activities, n.e.c.",
+      "code": "72900",
+      "description": "Other computer related activities [for example activities of development of",
       "division": "72",
       "group": "729",
       "class": "7290"
@@ -7164,6 +6471,48 @@
       "class": "7320"
     },
     {
+      "code": "74110",
+      "description": "Legal activities.[Legal services such as those rendered by advocates, barristers,",
+      "division": "74",
+      "group": "741",
+      "class": "7411"
+    },
+    {
+      "code": "74120",
+      "description": "Accounting, book-keeping and auditing activities; tax consultancy. [Data",
+      "division": "74",
+      "group": "741",
+      "class": "7412"
+    },
+    {
+      "code": "74130",
+      "description": "Market research and public opinion polling.[This class includes investigation on",
+      "division": "74",
+      "group": "741",
+      "class": "7413"
+    },
+    {
+      "code": "74140",
+      "description": "Business and management consultancy activities.[This class includes the",
+      "division": "74",
+      "group": "741",
+      "class": "7414"
+    },
+    {
+      "code": "74210",
+      "description": "Architectural and engineering activities and related technical consultancy[Test",
+      "division": "74",
+      "group": "742",
+      "class": "7421"
+    },
+    {
+      "code": "74220",
+      "description": "Technical testing and analysis.[Testing and analysis of medical and dental",
+      "division": "74",
+      "group": "742",
+      "class": "7422"
+    },
+    {
       "code": "74300",
       "description": "Advertising.[Printing of advertising material is classified in class 2221, Market",
       "division": "74",
@@ -7171,8 +6520,43 @@
       "class": "7430"
     },
     {
+      "code": "74910",
+      "description": "Labour recruitment and provision of personnel. [Activities of farm labour",
+      "division": "74",
+      "group": "749",
+      "class": "7491"
+    },
+    {
+      "code": "74920",
+      "description": "Investigation and security activities",
+      "division": "74",
+      "group": "749",
+      "class": "7492"
+    },
+    {
+      "code": "74930",
+      "description": "Building-cleaning activities",
+      "division": "74",
+      "group": "749",
+      "class": "7493"
+    },
+    {
+      "code": "74940",
+      "description": "Photographic activities. [Processing motion picture film related to the motion",
+      "division": "74",
+      "group": "749",
+      "class": "7494"
+    },
+    {
+      "code": "74950",
+      "description": "Packaging activities. [Packing activities incidental to transport are classified in",
+      "division": "74",
+      "group": "749",
+      "class": "7495"
+    },
+    {
       "code": "74991",
-      "description": "Auctioning activities of self employed auctioneers.",
+      "description": "Auctioning activities",
       "division": "74",
       "group": "749",
       "class": "7499"
@@ -7201,20 +6585,6 @@
     {
       "code": "74995",
       "description": "Services rendered by liaison offices",
-      "division": "74",
-      "group": "749",
-      "class": "7499"
-    },
-    {
-      "code": "74996",
-      "description": "Interior decoration",
-      "division": "74",
-      "group": "749",
-      "class": "7499"
-    },
-    {
-      "code": "74997",
-      "description": "Secretarial activities such as telephone answering, stenographic, duplicating &",
       "division": "74",
       "group": "749",
       "class": "7499"
@@ -7318,6 +6688,20 @@
       "class": "7514"
     },
     {
+      "code": "75210",
+      "description": "Foreign affairs [including administration, operation and support for information",
+      "division": "75",
+      "group": "752",
+      "class": "7521"
+    },
+    {
+      "code": "75220",
+      "description": "Defence activities [Educational activities of military schools etc. are classified in",
+      "division": "75",
+      "group": "752",
+      "class": "7522"
+    },
+    {
       "code": "75231",
       "description": "Public order and safety activities of the Union government.",
       "division": "75",
@@ -7347,7 +6731,7 @@
     },
     {
       "code": "80101",
-      "description": "Primary education, including pre-primary & upper-primary education",
+      "description": "Primary education, including pre-primary education",
       "division": "80",
       "group": "801",
       "class": "8010"
@@ -7360,36 +6744,22 @@
       "class": "8010"
     },
     {
-      "code": "80103",
-      "description": "Adult education primary level including upper-primary",
-      "division": "80",
-      "group": "801",
-      "class": "8010"
-    },
-    {
       "code": "80211",
-      "description": "General Secondary/Senior Secondary education, generally designed to qualify",
+      "description": "General secondary /senior secondary education, generally designed to qualify",
       "division": "80",
       "group": "802",
       "class": "8021"
     },
     {
       "code": "80212",
-      "description": "General Secondary/Senior Secondary school-type education for handicapped",
-      "division": "80",
-      "group": "802",
-      "class": "8021"
-    },
-    {
-      "code": "80213",
-      "description": "Adult education, Secondary/Senior Secondary level",
+      "description": "General secondary school-type education for handicapped students.",
       "division": "80",
       "group": "802",
       "class": "8021"
     },
     {
       "code": "80221",
-      "description": "Technical and vocational Secondary/Senior Secondary education below the level",
+      "description": "Technical and vocational secondary education below the level of university",
       "division": "80",
       "group": "802",
       "class": "8022"
@@ -7402,99 +6772,57 @@
       "class": "8022"
     },
     {
-      "code": "80223",
-      "description": "Adult education, Secondary/Senior Secondary level, technical and vocational",
-      "division": "80",
-      "group": "802",
-      "class": "8022"
-    },
-    {
       "code": "80301",
-      "description": "General higher education in science, commerce and humanity.",
+      "description": "General higher education",
       "division": "80",
       "group": "803",
       "class": "8030"
     },
     {
       "code": "80302",
-      "description": "Higher education in engineering / other technical courses.",
-      "division": "80",
-      "group": "803",
-      "class": "8030"
-    },
-    {
-      "code": "80303",
-      "description": "Higher education in medical/bio-technology and related courses.",
-      "division": "80",
-      "group": "803",
-      "class": "8030"
-    },
-    {
-      "code": "80304",
-      "description": "Higher education in professional/ vocational courses like hotel management,",
-      "division": "80",
-      "group": "803",
-      "class": "8030"
-    },
-    {
-      "code": "80305",
-      "description": "Higher education in management courses",
-      "division": "80",
-      "group": "803",
-      "class": "8030"
-    },
-    {
-      "code": "80306",
-      "description": "Higher education in information technology courses",
-      "division": "80",
-      "group": "803",
-      "class": "8030"
-    },
-    {
-      "code": "80309",
-      "description": "Higher education n.e.c. viz. oriental studies etc.",
+      "description": "Technical/vocational higher education",
       "division": "80",
       "group": "803",
       "class": "8030"
     },
     {
       "code": "80901",
-      "description": "Education by correspondence, through radio and television broadcasting and other",
+      "description": "Adult education",
       "division": "80",
       "group": "809",
       "class": "8090"
     },
     {
       "code": "80902",
-      "description": "Coaching centres",
+      "description": "Education by correspondence, through radio and television broadcasting and other",
       "division": "80",
       "group": "809",
       "class": "8090"
     },
     {
       "code": "80903",
-      "description": "Activities of the individuals providing tuition",
+      "description": "Coaching centres",
       "division": "80",
       "group": "809",
       "class": "8090"
     },
     {
       "code": "80904",
-      "description": "Activities relating to training/ education/ conduct of specialised course in",
+      "description": "Activities of the individuals providing tuition",
       "division": "80",
       "group": "809",
       "class": "8090"
     },
     {
-      "code": "85121",
-      "description": "Medical practice activities",
+      "code": "85110",
+      "description": "Hospital activities.[Includes the activities of general and specialized hospitals,",
       "division": "85",
       "group": "851",
-      "class": "8512"
+      "class": "8511"
     },
     {
-      "code": "85122",
-      "description": "Dental practice activities",
+      "code": "85120",
+      "description": "Medical and dental practice activities. [Includes consultation and treatment",
       "division": "85",
       "group": "851",
       "class": "8512"
@@ -7542,15 +6870,8 @@
       "class": "8519"
     },
     {
-      "code": "85197",
-      "description": "Medical Transcription activities",
-      "division": "85",
-      "group": "851",
-      "class": "8519"
-    },
-    {
       "code": "85199",
-      "description": "Other human health activities n.e.c. (including independent ambulance activities)",
+      "description": "Other human health activities, n.e.c. (including independent ambulance",
       "division": "85",
       "group": "851",
       "class": "8519"
@@ -7561,6 +6882,20 @@
       "division": "85",
       "group": "852",
       "class": "8520"
+    },
+    {
+      "code": "85310",
+      "description": "Social work with accommodation. [Includes the activities of orphanages, children",
+      "division": "85",
+      "group": "853",
+      "class": "8531"
+    },
+    {
+      "code": "85320",
+      "description": "Social work without accommodation. [Includes a variety of social, counselling,",
+      "division": "85",
+      "group": "853",
+      "class": "8532"
     },
     {
       "code": "90001",
@@ -7584,11 +6919,46 @@
       "class": "9000"
     },
     {
+      "code": "91110",
+      "description": "Activities of business and employers organisations [Includes activities of industry",
+      "division": "91",
+      "group": "911",
+      "class": "9111"
+    },
+    {
+      "code": "91120",
+      "description": "Activities of professional organisations [This class includes the activities of",
+      "division": "91",
+      "group": "911",
+      "class": "9112"
+    },
+    {
       "code": "91200",
       "description": "Activities of trade unions [Includes activities of associations whose members are",
       "division": "91",
       "group": "912",
       "class": "9120"
+    },
+    {
+      "code": "91910",
+      "description": "Activities of religious organisations [Includes the activities of religious",
+      "division": "91",
+      "group": "919",
+      "class": "9191"
+    },
+    {
+      "code": "91920",
+      "description": "Activities of political organisations",
+      "division": "91",
+      "group": "919",
+      "class": "9192"
+    },
+    {
+      "code": "91990",
+      "description": "Activities of other membership organizations n.e.c. [Includes rotary clubs, student",
+      "division": "91",
+      "group": "919",
+      "class": "9199"
     },
     {
       "code": "92111",
@@ -7599,7 +6969,7 @@
     },
     {
       "code": "92112",
-      "description": "Motion picture distribution and activities allied to film distribution [excluding film",
+      "description": "Motion picture distribution and activities allied to film distribution",
       "division": "92",
       "group": "921",
       "class": "9211"
@@ -7619,11 +6989,11 @@
       "class": "9211"
     },
     {
-      "code": "92115",
-      "description": "Sound recording studios",
+      "code": "92120",
+      "description": "Motion picture projection",
       "division": "92",
       "group": "921",
-      "class": "9211"
+      "class": "9212"
     },
     {
       "code": "92131",
@@ -7648,21 +7018,7 @@
     },
     {
       "code": "92142",
-      "description": "Activities of the individual artists excluding authors such as sculptors, painters,",
-      "division": "92",
-      "group": "921",
-      "class": "9214"
-    },
-    {
-      "code": "92143",
-      "description": "Literary activities.",
-      "division": "92",
-      "group": "921",
-      "class": "9214"
-    },
-    {
-      "code": "92149",
-      "description": "Dramatic arts, music and other art activities n.e.c.",
+      "description": "Activities of the independent artists",
       "division": "92",
       "group": "921",
       "class": "9214"
@@ -7717,6 +7073,13 @@
       "class": "9232"
     },
     {
+      "code": "92330",
+      "description": "Botanical and zoological gardens and nature reserves activities.",
+      "division": "92",
+      "group": "923",
+      "class": "9233"
+    },
+    {
       "code": "92411",
       "description": "Operation and maintenance of sports facilities such as stadia, gymnasia, sports",
       "division": "92",
@@ -7739,87 +7102,52 @@
     },
     {
       "code": "92419",
-      "description": "Other sporting activities n.e.c.",
+      "description": "Sporting and other recreational activities, n.e.c.",
       "division": "92",
       "group": "924",
       "class": "9241"
     },
     {
-      "code": "93091",
-      "description": "Social activities such as marriage bureaus",
-      "division": "93",
-      "group": "930",
-      "class": "9309"
+      "code": "92490",
+      "description": "Other recreational activities [Includes recording or taping of sound on a fee or",
+      "division": "92",
+      "group": "924",
+      "class": "9249"
     },
     {
-      "code": "93092",
-      "description": "Pet care services such as boarding, grooming and training pets etc.",
+      "code": "93010",
+      "description": "Washing and (dry-) cleaning of textile and fur products [including laundry",
       "division": "93",
       "group": "930",
-      "class": "9309"
+      "class": "9301"
     },
     {
-      "code": "93093",
-      "description": "Shoe shiners, porters, valet car parkers etc.",
+      "code": "93020",
+      "description": "Hair dressing and other beauty treatment [including facial massage, manicure and",
       "division": "93",
       "group": "930",
-      "class": "9309"
+      "class": "9302"
     },
     {
-      "code": "93094",
-      "description": "Coin-operated personal service machines such as photo booths, weighing",
+      "code": "93030",
+      "description": "Funeral and related activities [such as operation and maintenance of",
       "division": "93",
       "group": "930",
-      "class": "9309"
+      "class": "9303"
     },
     {
-      "code": "93095",
-      "description": "Activities of sauna and steam baths, massage salons etc.",
-      "division": "93",
-      "group": "930",
-      "class": "9309"
-    },
-    {
-      "code": "93096",
-      "description": "Astrological and spiritualists’ activities",
-      "division": "93",
-      "group": "930",
-      "class": "9309"
-    },
-    {
-      "code": "93097",
-      "description": "Activities of aaya, dhai, governess, baby sitter etc.",
-      "division": "93",
-      "group": "930",
-      "class": "9309"
-    },
-    {
-      "code": "93098",
-      "description": "General household maintenance activities like grooming of the floor, dusting,",
+      "code": "93090",
+      "description": "Other service activities n.e.c. [Includes activities related to physical well being",
       "division": "93",
       "group": "930",
       "class": "9309"
     },
     {
       "code": "95000",
-      "description": "Activities of private households as employers of domestic staff. [Includes the",
+      "description": "Private households with employed persons. [Includes the activities of private",
       "division": "95",
       "group": "950",
       "class": "9500"
-    },
-    {
-      "code": "96000",
-      "description": "Undifferenciated goods-producing activities of private households for own use.",
-      "division": "96",
-      "group": "960",
-      "class": "9600"
-    },
-    {
-      "code": "97000",
-      "description": "Undifferenciated service-producing activities of private households for own use.",
-      "division": "97",
-      "group": "970",
-      "class": "9700"
     },
     {
       "code": "99000",
