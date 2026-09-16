@@ -29,6 +29,9 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Install PDF text tools
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
       - name: Import NIC-2004 master
         run: node scripts/import-nic-2004.js
 
