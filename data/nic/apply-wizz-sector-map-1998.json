@@ -1,0 +1,33 @@
+{
+  "NIC-1998": {
+    "01":{"primary_sector":"agriculture_food","technology_signal":"low"},
+    "02":{"primary_sector":"agriculture_food","technology_signal":"low"},
+    "05":{"primary_sector":"agriculture_food","technology_signal":"low"},
+    "15":{"primary_sector":"agriculture_food","technology_signal":"low"},
+    "24":{"primary_sector":"healthcare_pharma","technology_signal":"low"},
+    "30":{"primary_sector":"technology","technology_signal":"high"},
+    "32":{"primary_sector":"technology","technology_signal":"high"},
+    "45":{"primary_sector":"realestate_construction","technology_signal":"low"},
+    "50":{"primary_sector":"retail_commerce","technology_signal":"low"},
+    "51":{"primary_sector":"retail_commerce","technology_signal":"low"},
+    "52":{"primary_sector":"retail_commerce","technology_signal":"low"},
+    "55":{"primary_sector":"hospitality_travel","technology_signal":"low"},
+    "60":{"primary_sector":"logistics_supply","technology_signal":"medium"},
+    "61":{"primary_sector":"logistics_supply","technology_signal":"medium"},
+    "62":{"primary_sector":"logistics_supply","technology_signal":"medium"},
+    "63":{"primary_sector":"logistics_supply","technology_signal":"medium"},
+    "64":{"primary_sector":"technology","technology_signal":"high"},
+    "65":{"primary_sector":"finance_fintech","technology_signal":"medium"},
+    "66":{"primary_sector":"finance_fintech","technology_signal":"medium"},
+    "67":{"primary_sector":"finance_fintech","technology_signal":"medium"},
+    "70":{"primary_sector":"realestate_construction","technology_signal":"low"},
+    "71":{"primary_sector":"professional_services","technology_signal":"medium"},
+    "72":{"primary_sector":"technology","technology_signal":"high"},
+    "73":{"primary_sector":"professional_services","technology_signal":"high"},
+    "74":{"primary_sector":"professional_services","technology_signal":"medium"},
+    "80":{"primary_sector":"education","technology_signal":"medium"},
+    "85":{"primary_sector":"healthcare_pharma","technology_signal":"medium"},
+    "92":{"primary_sector":"media_publishing","technology_signal":"medium"},
+    "default_manufacturing_divisions":["10","11","12","13","14","16","17","18","19","20","21","22","23","25","26","27","28","29","31","33","34","35","36","37"]
+  }
+}
