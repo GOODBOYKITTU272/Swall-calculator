@@ -3,120 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Company Segregation · MCA STK-7</title>
-  <meta name="description" content="Company segregation dashboard for MCA STK-7 / Mercor coding inventory" />
+  <title>Apply Wizz · Contact Acquisition Intelligence</title>
+  <meta name="description" content="Sector-first company contact research and outreach dashboard for MCA STK-7 leads." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="app">
-    <header class="header">
-      <div class="header-inner">
-        <div class="brand">
-          <h1>Company Segregation</h1>
-          <p class="subtitle">
-            MCA Form STK-7 strike-off notices · Mercor coding inventory
-            <span class="source-pill" id="sourcePill">Loading…</span>
-          </p>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#/overview" aria-label="Apply Wizz overview">
+        <span class="brand-mark">AW</span>
+        <span><strong>Apply <em>Wizz</em></strong><small>Contact Acquisition</small></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#/overview" data-nav="overview"><span>▦</span>Overview</a>
+        <a href="#/overview" data-nav="sector"><span>◫</span>Sector Segmentation</a>
+        <a href="#/research" data-nav="research"><span>⌕</span>Research Queue</a>
+        <a href="#/outreach" data-nav="outreach"><span>➤</span>Outreach</a>
+        <a href="#/pipeline" data-nav="pipeline"><span>⚑</span>Contact Pipeline</a>
+      </nav>
+
+      <div class="sidebar-source">
+        <span class="source-kicker">Data source</span>
+        <strong>MCA STK-7</strong>
+        <span id="sidebarSourceMeta">Loading company inventory…</span>
+        <span class="local-pill">● Local research state</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow" id="breadcrumb">Company → Contact</div>
+          <h1 id="pageTitle">Contact Acquisition Intelligence</h1>
+          <p id="pageSubtitle">Sector → right person → verified channel → outreach.</p>
         </div>
-        <div class="header-meta" id="headerMeta"></div>
-      </div>
-    </header>
+        <div class="top-actions">
+          <button class="btn btn-secondary" type="button" id="exportBtn">Export current view</button>
+        </div>
+      </header>
 
-    <section class="kpis" id="kpiRow" aria-label="Summary KPIs">
-      <!-- filled by app.js -->
-    </section>
+      <section class="notice" id="sourceNotice">
+        <span class="notice-icon">!</span>
+        <div>
+          <strong>STK-7 source notice</strong>
+          <p>These records come from strike-off / dissolution notices. Contact identity, asset possession, and licensing authority must be researched and verified separately.</p>
+        </div>
+      </section>
 
-    <section class="controls" aria-label="Filters">
-      <div class="control-block">
-        <span class="control-label">Sector</span>
-        <div class="chip-group" id="sectorChips" role="group" aria-label="Sector filter"></div>
+      <div id="appContent" class="content" aria-live="polite">
+        <div class="loading-card">Loading company intelligence…</div>
       </div>
-      <div class="control-block">
-        <span class="control-label">Contact</span>
-        <div class="chip-group" id="contactChips" role="group" aria-label="Contact filter"></div>
-      </div>
-      <div class="control-row">
-        <label class="field grow">
-          <span>Search</span>
-          <input type="search" id="searchInput" placeholder="Company name or CIN…" autocomplete="off" />
-        </label>
-        <label class="field">
-          <span>Website</span>
-          <select id="websiteSelect">
-            <option value="">All</option>
-            <option value="live">Live</option>
-            <option value="dead">Dead</option>
-            <option value="unknown">Unknown</option>
-            <option value="__empty">Not checked / empty</option>
-          </select>
-        </label>
-        <label class="field">
-          <span>Code signal</span>
-          <select id="codeSelect">
-            <option value="">All</option>
-            <option value="strong">Strong</option>
-            <option value="medium">Medium</option>
-            <option value="weak">Weak</option>
-            <option value="none">None</option>
-            <option value="__empty">Not checked / empty</option>
-          </select>
-        </label>
-        <label class="field">
-          <span>State</span>
-          <select id="stateSelect">
-            <option value="">All states</option>
-          </select>
-        </label>
-        <button type="button" class="btn-ghost" id="resetFilters" title="Reset all filters">Reset</button>
-      </div>
-    </section>
-
-    <section class="results-bar">
-      <div class="results-count" id="resultsCount">—</div>
-      <div class="results-hint" id="resultsHint"></div>
-    </section>
-
-    <section class="results" aria-label="Company results">
-      <div class="table-wrap desktop-only">
-        <table class="company-table" id="companyTable">
-          <thead>
-            <tr>
-              <th>Company</th>
-              <th>Sector</th>
-              <th>Contact</th>
-              <th>Website</th>
-              <th>Code</th>
-              <th>State</th>
-            </tr>
-          </thead>
-          <tbody id="tableBody"></tbody>
-        </table>
-      </div>
-      <div class="card-list mobile-only" id="cardList"></div>
-      <div class="empty-state hidden" id="emptyState">
-        <h3>No companies match</h3>
-        <p id="emptyCopy">Try widening filters. Non-tech rows were not deep-dived — contact and website fields are “not checked”.</p>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <p>Static client-side inventory · data from <code>data/companies.json</code> · deep-dive completed for tech + biotech only</p>
-    </footer>
+    </main>
   </div>
 
-  <!-- Detail drawer -->
-  <div class="drawer-backdrop hidden" id="drawerBackdrop" aria-hidden="true"></div>
-  <aside class="drawer hidden" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
-    <div class="drawer-header">
-      <div>
-        <h2 id="drawerTitle">Company</h2>
-        <p class="drawer-cin" id="drawerCin"></p>
-      </div>
-      <button type="button" class="btn-icon" id="drawerClose" aria-label="Close detail panel">×</button>
-    </div>
-    <div class="drawer-body" id="drawerBody"></div>
-  </aside>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
+  <script src="app-model.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
