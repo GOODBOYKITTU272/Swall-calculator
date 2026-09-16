@@ -1,2 +1,1 @@
-# Swall-calculator
-Compound Interest Calculator — static site for Vercel
+Compound interest calculator (static HTML) for Vercel. Open index.html.
