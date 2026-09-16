@@ -29,3 +29,19 @@ test('validates master shape and expected anchor codes', () => {
   assert.equal(report.valid,true);
   assert.deepEqual(report.missingAnchors,[]);
 });
+
+test('parses five-digit subclasses from official NIC-2004 detailed-text layout', () => {
+  const text = `
+DIVISION 72 : COMPUTER AND RELATED ACTIVITIES
+721 7210 72100 Hardware consultancy.
+7221 Software publishing
+72211 Production, supply and documentation of ready-made (non-customized) software
+7229 Other software consultancy and supply
+72291 Analysis, design and programming of custom software, ready to use, including
+729 7290 Other computer related activities
+72909 Other computer related activities, n.e.c.
+`;
+  const rows = require('../scripts/import-nic-2004').parseNicDetailedText(text);
+  assert.deepEqual(rows.map(r => r.code), ['72100','72211','72291','72909']);
+  assert.match(rows[2].description, /custom software/);
+});
