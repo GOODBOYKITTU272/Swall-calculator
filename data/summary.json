@@ -1,0 +1,18 @@
+{
+  "total": 1607,
+  "by_sector": {
+    "non_tech": 1326,
+    "tech": 259,
+    "biotech": 22
+  },
+  "by_contact": {
+    "not_checked": 1326,
+    "unknown": 245,
+    "known": 36
+  },
+  "deep_dived": 281,
+  "known_contacts": 36,
+  "strike_off_date": "2026-09-01",
+  "source": "MCA Form STK-7 public notices 2026-27/1186\u20131219",
+  "notes": "Deep-dive (website/email/phone/GitHub) completed for tech+biotech only. Non-tech marked not_checked."
+}
