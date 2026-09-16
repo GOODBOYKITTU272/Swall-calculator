@@ -1,0 +1,33 @@
+{
+  "NIC-2004": {
+    "authority": "Ministry of Statistics and Programme Implementation, Government of India",
+    "title": "Updated National Industrial Classification 2004",
+    "official_url": "https://mospi.gov.in/sites/default/files/economic-census/nic_code/nic_2004_foreword_0.pdf",
+    "status": "official_reference"
+  },
+  "NIC-2008": {
+    "authority": "Ministry of Statistics and Programme Implementation, Government of India",
+    "title": "National Industrial Classification 2008",
+    "official_url": "https://www.mospi.gov.in/sites/default/files/main_menu/national_industrial_classification/h_NIC-2008.pdf",
+    "official_excel_url": "https://www.mospi.gov.in/uploads/documents/publicDocuments/1760616763355-NIC_2008.xlsx",
+    "status": "official_reference"
+  },
+  "NIC-2008-MIRROR": {
+    "authority": "Machine-readable mirror derived from MoSPI NIC-2008",
+    "url": "https://raw.githubusercontent.com/avantifellows/external_data_sources/main/plfs/codemaps/nic_subclass.csv",
+    "status": "mirror_only"
+  },
+  "NIC-1998": {
+    "authority": "Ministry of Statistics and Programme Implementation, Government of India",
+    "title": "National Industrial Classification 1998",
+    "official_url": "https://microdata.gov.in/NADA/index.php/catalog/103/related-materials",
+    "status": "official_reference",
+    "note": "Used as a legacy dictionary candidate for CIN industry semantics; conflicting codes require explicit CIN evidence overrides."
+  },
+  "CIN-LEGACY-OVERRIDES": {
+    "authority": "Apply Wizz evidence layer",
+    "title": "Verified legacy CIN code semantics",
+    "status": "curated_evidence",
+    "rule": "Only verified overrides may resolve an official-dictionary conflict. Company-name keywords are never sufficient."
+  }
+}
