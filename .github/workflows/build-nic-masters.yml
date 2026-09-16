@@ -1,0 +1,63 @@
+name: Build NIC reference masters
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - phase2-contact-acquisition
+    paths:
+      - '.github/workflows/build-nic-masters.yml'
+      - 'scripts/import-nic-2004.js'
+      - 'scripts/import-nic-2008.js'
+      - 'data/nic/sources.json'
+
+permissions:
+  contents: write
+
+jobs:
+  build-masters:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout feature branch
+        uses: actions/checkout@v4
+        with:
+          ref: phase2-contact-acquisition
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Import NIC-2004 master
+        run: node scripts/import-nic-2004.js
+
+      - name: Import NIC-2008 master
+        run: node scripts/import-nic-2008.js
+
+      - name: Run classification tests
+        run: node --test tests/*.test.js
+
+      - name: Validate generated masters
+        run: |
+          node - <<'NODE'
+          const fs = require('node:fs');
+          for (const file of ['data/nic/nic-2004.json','data/nic/nic-2008.json']) {
+            const parsed = JSON.parse(fs.readFileSync(file,'utf8'));
+            if (!Array.isArray(parsed.rows) || parsed.rows.length < 1000) throw new Error(`${file}: insufficient rows`);
+            if (!parsed.meta?.nic_version) throw new Error(`${file}: missing version metadata`);
+            console.log(file, parsed.meta.nic_version, parsed.rows.length);
+          }
+          NODE
+
+      - name: Commit generated masters
+        run: |
+          git config user.name 'Apply Wizz Data Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/nic/nic-2004.json data/nic/nic-2008.json
+          if git diff --cached --quiet; then
+            echo 'No master changes to commit.'
+            exit 0
+          fi
+          git commit -m 'data: generate validated NIC reference masters'
+          git push origin HEAD:phase2-contact-acquisition
