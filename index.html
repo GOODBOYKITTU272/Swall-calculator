@@ -1,62 +1,122 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Compound Interest Calculator</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <h1>Compound Interest Calculator</h1>
-    <form>
-      <label for="initial-amount">Initial amount:</label>
-      <input type="number" id="initial-amount" name="initial-amount"><br>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Company Segregation · MCA STK-7</title>
+  <meta name="description" content="Company segregation dashboard for MCA STK-7 / Mercor coding inventory" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header-inner">
+        <div class="brand">
+          <h1>Company Segregation</h1>
+          <p class="subtitle">
+            MCA Form STK-7 strike-off notices · Mercor coding inventory
+            <span class="source-pill" id="sourcePill">Loading…</span>
+          </p>
+        </div>
+        <div class="header-meta" id="headerMeta"></div>
+      </div>
+    </header>
 
-      <label for="daily-interest-rate">Daily interest rate:</label>
-      <input type="number" id="daily-interest-rate" name="daily-interest-rate" value="0.8" readonly><br>
+    <section class="kpis" id="kpiRow" aria-label="Summary KPIs">
+      <!-- filled by app.js -->
+    </section>
 
-      <label for="num-days">Number of days:</label>
-      <input type="number" id="num-days" name="num-days"><br>
+    <section class="controls" aria-label="Filters">
+      <div class="control-block">
+        <span class="control-label">Sector</span>
+        <div class="chip-group" id="sectorChips" role="group" aria-label="Sector filter"></div>
+      </div>
+      <div class="control-block">
+        <span class="control-label">Contact</span>
+        <div class="chip-group" id="contactChips" role="group" aria-label="Contact filter"></div>
+      </div>
+      <div class="control-row">
+        <label class="field grow">
+          <span>Search</span>
+          <input type="search" id="searchInput" placeholder="Company name or CIN…" autocomplete="off" />
+        </label>
+        <label class="field">
+          <span>Website</span>
+          <select id="websiteSelect">
+            <option value="">All</option>
+            <option value="live">Live</option>
+            <option value="dead">Dead</option>
+            <option value="unknown">Unknown</option>
+            <option value="__empty">Not checked / empty</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Code signal</span>
+          <select id="codeSelect">
+            <option value="">All</option>
+            <option value="strong">Strong</option>
+            <option value="medium">Medium</option>
+            <option value="weak">Weak</option>
+            <option value="none">None</option>
+            <option value="__empty">Not checked / empty</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>State</span>
+          <select id="stateSelect">
+            <option value="">All states</option>
+          </select>
+        </label>
+        <button type="button" class="btn-ghost" id="resetFilters" title="Reset all filters">Reset</button>
+      </div>
+    </section>
 
-      <input type="button" value="Calculate" onclick="calculate()"><br>
+    <section class="results-bar">
+      <div class="results-count" id="resultsCount">—</div>
+      <div class="results-hint" id="resultsHint"></div>
+    </section>
 
-      <h2 id="total-profit"></h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Day</th>
-            <th>Starting Amount</th>
-            <th>Interest Earned</th>
-            <th>Ending Amount</th>
-          </tr>
-        </thead>
-        <tbody id="results">
-        </tbody>
-      </table>
-    </form>
+    <section class="results" aria-label="Company results">
+      <div class="table-wrap desktop-only">
+        <table class="company-table" id="companyTable">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Sector</th>
+              <th>Contact</th>
+              <th>Website</th>
+              <th>Code</th>
+              <th>State</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+      <div class="card-list mobile-only" id="cardList"></div>
+      <div class="empty-state hidden" id="emptyState">
+        <h3>No companies match</h3>
+        <p id="emptyCopy">Try widening filters. Non-tech rows were not deep-dived — contact and website fields are “not checked”.</p>
+      </div>
+    </section>
 
-    <script>
-      function calculate() {
-        const initialAmount = parseFloat(document.getElementById("initial-amount").value);
-        const dailyInterestRate = 0.8 / 100;
-        const numDays = parseInt(document.getElementById("num-days").value);
+    <footer class="footer">
+      <p>Static client-side inventory · data from <code>data/companies.json</code> · deep-dive completed for tech + biotech only</p>
+    </footer>
+  </div>
 
-        let currentAmount = initialAmount;
-        let totalInterest = 0;
-        let tableRows = "";
+  <!-- Detail drawer -->
+  <div class="drawer-backdrop hidden" id="drawerBackdrop" aria-hidden="true"></div>
+  <aside class="drawer hidden" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <div class="drawer-header">
+      <div>
+        <h2 id="drawerTitle">Company</h2>
+        <p class="drawer-cin" id="drawerCin"></p>
+      </div>
+      <button type="button" class="btn-icon" id="drawerClose" aria-label="Close detail panel">×</button>
+    </div>
+    <div class="drawer-body" id="drawerBody"></div>
+  </aside>
 
-        for (let i = 1; i <= numDays; i++) {
-          const dailyInterest = currentAmount * dailyInterestRate;
-          const endingAmount = currentAmount + dailyInterest;
-          totalInterest += dailyInterest;
-          tableRows += "<tr><td>" + i + "</td><td>" + currentAmount.toFixed(2) + "</td><td>" + dailyInterest.toFixed(2) + "</td><td>" + endingAmount.toFixed(2) + "</td></tr>";
-          currentAmount = endingAmount;
-        }
-
-        const totalProfit = totalInterest.toFixed(2);
-        document.getElementById("total-profit").innerHTML = "Total Profit: ₹" + totalProfit;
-
-        document.getElementById("results").innerHTML = tableRows;
-      }
-    </script>
-  </body>
+  <script src="app.js"></script>
+</body>
 </html>

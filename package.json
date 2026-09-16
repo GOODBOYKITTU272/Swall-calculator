@@ -1,5 +1,10 @@
 {
-  "name": "swall-calculator",
+  "name": "company-segregation",
+  "private": true,
   "version": "1.0.0",
-  "private": true
+  "description": "Static Company Segregation dashboard for MCA STK-7 / Mercor coding inventory",
+  "scripts": {
+    "start": "npx --yes serve . -p 3000",
+    "deploy": "npx --yes vercel --prod"
+  }
 }
