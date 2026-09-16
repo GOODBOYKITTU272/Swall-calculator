@@ -2,6 +2,8 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
+const os = require('node:os');
+const { execFileSync } = require('node:child_process');
 
 const SOURCE_URL = 'https://microdata.gov.in/NADA/index.php/catalog/124/variable/V207';
 const AUTHORITY_URL = 'https://mospi.gov.in/sites/default/files/main_menu/national_industrial_classification/nic_2004_struc_detail.pdf';
@@ -41,6 +43,34 @@ function parseNicCategoryHtml(html) {
   return [...found.values()].sort((a, b) => a.code.localeCompare(b.code));
 }
 
+function parseNicDetailedText(text) {
+  const found = new Map();
+  for (const rawLine of String(text || '').split(/\r?\n/)) {
+    const line = rawLine.replace(/\s+/g, ' ').trim();
+    if (!line) continue;
+    const match = /^(?:(?:\d{3})\s+(?:\d{4})\s+)?(\d{5})\s+(.+)$/.exec(line);
+    if (!match) continue;
+    const code = match[1];
+    const description = match[2].trim();
+    if (!description || found.has(code)) continue;
+    found.set(code, { code, description });
+  }
+  return [...found.values()].sort((a, b) => a.code.localeCompare(b.code));
+}
+
+async function fetchOfficialPdfRows() {
+  const response = await fetch(AUTHORITY_URL, { headers: { 'user-agent': 'Apply-Wizz-NIC-Importer/1.0' } });
+  if (!response.ok) throw new Error(`NIC-2004 authority PDF request failed: ${response.status}`);
+  const tmp = path.join(os.tmpdir(), `apply-wizz-nic-2004-${process.pid}.pdf`);
+  fs.writeFileSync(tmp, Buffer.from(await response.arrayBuffer()));
+  try {
+    const text = execFileSync('pdftotext', ['-layout', tmp, '-'], { encoding: 'utf8', maxBuffer: 20 * 1024 * 1024 });
+    return parseNicDetailedText(text);
+  } finally {
+    try { fs.unlinkSync(tmp); } catch {}
+  }
+}
+
 function validateNicMaster(rows, options = {}) {
   const minimumRows = options.minimumRows ?? 1100;
   const codes = new Set();
@@ -78,10 +108,15 @@ function buildMaster(rows) {
 }
 
 async function importNic2004({ sourceUrl = SOURCE_URL, outputPath } = {}) {
-  const response = await fetch(sourceUrl, { headers: { 'user-agent': 'Apply-Wizz-NIC-Importer/1.0' } });
-  if (!response.ok) throw new Error(`NIC-2004 source request failed: ${response.status}`);
-  const html = await response.text();
-  const rows = parseNicCategoryHtml(html);
+  let rows = [];
+  try {
+    const response = await fetch(sourceUrl, { headers: { 'user-agent': 'Apply-Wizz-NIC-Importer/1.0' } });
+    if (!response.ok) throw new Error(`catalog status ${response.status}`);
+    rows = parseNicCategoryHtml(await response.text());
+  } catch (error) {
+    console.warn(`NIC-2004 catalog unavailable (${error.message}); falling back to official MoSPI PDF.`);
+  }
+  if (rows.length < 1100) rows = await fetchOfficialPdfRows();
   const report = validateNicMaster(rows);
   if (!report.valid) throw new Error(`NIC-2004 validation failed: ${report.errors.join('; ')}`);
   const master = buildMaster(rows);
@@ -100,4 +135,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { SOURCE_URL, AUTHORITY_URL, parseNicCategoryHtml, validateNicMaster, buildMaster, importNic2004 };
+module.exports = { SOURCE_URL, AUTHORITY_URL, parseNicCategoryHtml, parseNicDetailedText, validateNicMaster, buildMaster, importNic2004 };
