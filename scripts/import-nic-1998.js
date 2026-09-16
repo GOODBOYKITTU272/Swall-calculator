@@ -6,10 +6,9 @@ const os = require('node:os');
 const { execFileSync } = require('node:child_process');
 
 const SOURCE_URLS = [
-  'https://microdata.gov.in/NADA/index.php/catalog/103/download/6523',
-  'https://microdata.gov.in/nada43/index.php/catalog/91/download/872',
+  'https://www.mospi.gov.in/sites/default/files/main_menu/national_industrial_classification/nic98_7may08.pdf',
 ];
-const AUTHORITY_CATALOG_URL = 'https://microdata.gov.in/NADA/index.php/catalog/103/related-materials';
+const AUTHORITY_CATALOG_URL = 'https://www.mospi.gov.in/sites/default/files/main_menu/national_industrial_classification/nic98_7may08.pdf';
 const EXPECTED_ANCHORS = ['01111', '24233', '72200', '72900'];
 
 function cleanDescription(value) {
@@ -67,7 +66,7 @@ function buildMaster(rows, downloadedFrom) {
       nic_version:'NIC-1998', level:'5-digit subclass',
       authority_catalog_url:AUTHORITY_CATALOG_URL,
       downloaded_from:downloadedFrom,
-      source_authority:'National Sample Survey Office / Government of India',
+      source_authority:'Ministry of Statistics and Programme Implementation, Government of India',
       expected_official_subclasses:1021,
       generated_at:new Date().toISOString(),
     },
