@@ -81,3 +81,15 @@ test('unknown code remains unclassified and review required', () => {
   const c=M.classifyCompany({cin:'U99999KA2020PTC123456',name:'ABC TECH PRIVATE LIMITED'}, dictionaries, overrides, sectorMap);
   assert.equal(c.primary_sector,'unclassified'); assert.equal(c.review_required,true);
 });
+
+test('manufacturing fallback maps configured division to manufacturing', () => {
+  const dictionaries2={
+    'NIC-2008': {'25111':{code:'25111',description:'Manufacture of structural metal products',version:'NIC-2008',division:'25',verified:true}},
+  };
+  const sectorMap2={
+    'NIC-2008': { default_manufacturing_divisions:['25'] },
+  };
+  const r=M.resolveCinIndustry('25111',dictionaries2,{},sectorMap2);
+  assert.equal(r.primary_sector,'manufacturing');
+  assert.equal(r.technology_signal,'low');
+});
