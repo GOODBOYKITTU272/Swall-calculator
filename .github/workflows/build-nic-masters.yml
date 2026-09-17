@@ -10,7 +10,14 @@ on:
       - 'scripts/import-nic-1998.js'
       - 'scripts/import-nic-2004.js'
       - 'scripts/import-nic-2008.js'
+      - 'scripts/classify-companies.js'
+      - 'cin-industry-model.js'
+      - 'tests/**'
+      - 'data/companies.json'
       - 'data/nic/sources.json'
+      - 'data/nic/cin-code-overrides.json'
+      - 'data/nic/apply-wizz-sector-map-1998.json'
+      - 'data/nic/apply-wizz-sector-map.json'
 
 permissions:
   contents: write
@@ -62,14 +69,36 @@ jobs:
           }
           NODE
 
-      - name: Commit generated masters
+      - name: Generate company classifications
+        run: node scripts/classify-companies.js
+
+      - name: Validate derivative classification output
+        run: |
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const source = JSON.parse(fs.readFileSync('data/companies.json','utf8'));
+          const classified = JSON.parse(fs.readFileSync('data/companies-classified.json','utf8'));
+          const report = JSON.parse(fs.readFileSync('data/classification-report.json','utf8'));
+          if (!Array.isArray(source) || !Array.isArray(classified)) throw new Error('company files must be arrays');
+          if (source.length !== classified.length) throw new Error(`row count mismatch: ${source.length} vs ${classified.length}`);
+          if (report.source_count !== source.length || report.summary.total !== source.length) throw new Error('classification report count mismatch');
+          for (let i = 0; i < source.length; i++) {
+            for (const [key, value] of Object.entries(source[i])) {
+              if (JSON.stringify(classified[i][key]) !== JSON.stringify(value)) throw new Error(`source field changed at row ${i}: ${key}`);
+            }
+          }
+          console.log(JSON.stringify(report.summary, null, 2));
+          NODE
+          git diff --exit-code -- data/companies.json
+
+      - name: Commit generated reference and classification data
         run: |
           git config user.name 'Apply Wizz Data Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/nic/nic-1998.json data/nic/nic-2004.json data/nic/nic-2008.json
+          git add data/nic/nic-1998.json data/nic/nic-2004.json data/nic/nic-2008.json data/companies-classified.json data/classification-report.json
           if git diff --cached --quiet; then
-            echo 'No master changes to commit.'
+            echo 'No generated data changes to commit.'
             exit 0
           fi
-          git commit -m 'data: generate validated NIC reference masters'
+          git commit -m 'data: generate audited CIN classifications'
           git push origin HEAD:phase2-contact-acquisition
