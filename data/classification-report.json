@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-09-17T07:07:47.045Z",
+  "source_file": "data/companies.json",
+  "output_file": "data/companies-classified.json",
+  "source_count": 1607,
+  "source_mutated": false,
+  "dictionaries": [
+    "NIC-1998",
+    "NIC-2004",
+    "NIC-2008"
+  ],
+  "summary": {
+    "total": 1607,
+    "exact": 1153,
+    "ambiguous": 178,
+    "unmatched": 276,
+    "invalid_cin": 0,
+    "review_required": 486,
+    "verified_overrides": 147,
+    "by_sector": {
+      "agriculture_food": 38,
+      "unclassified": 486,
+      "retail_commerce": 167,
+      "logistics_supply": 30,
+      "hospitality_travel": 18,
+      "technology": 240,
+      "finance_fintech": 38,
+      "realestate_construction": 100,
+      "professional_services": 273,
+      "education": 28,
+      "media_publishing": 27,
+      "healthcare_pharma": 39,
+      "manufacturing": 123
+    },
+    "by_dictionary": {
+      "NIC-1998": 116,
+      "unresolved": 454,
+      "NIC-1998+NIC-2004": 436,
+      "NIC-2008": 454,
+      "CIN-LEGACY": 147
+    },
+    "anomaly_flags": {
+      "name_contains_technology_term": 265,
+      "name_sector_mismatch_review": 126
+    }
+  }
+}
